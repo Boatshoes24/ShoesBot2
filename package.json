@@ -1,16 +1,27 @@
 {
-    "name": "shoesbot2",
-    "version": "1.0.0",
-    "description": "For use with the Stay Mad discord",
-    "main": "index.js",
-    "scripts": {
-      "test": "echo \"Error: no test specified\" && exit 1",
-      "start": "node index.js"
-    },
-    "author": "Boatshoes24",
-    "license": "ISC",
-    "dependencies": {
-      "discord.js": "^11.4.2",
-      "request": "2.81.0"
-    }
-  }
+  "name": "ShoesBot2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "discord.js": "^12.2.0",
+    "eslint": "^7.5.0",
+    "node-fetch": "^2.6.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Boatshoes24/ShoesBot2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Boatshoes24/ShoesBot2/issues"
+  },
+  "homepage": "https://github.com/Boatshoes24/ShoesBot2#readme"
+}
