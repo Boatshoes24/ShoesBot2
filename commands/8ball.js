@@ -26,6 +26,7 @@ module.exports = {
             .addField('8-Ball response:', `${response}`, false)
             .setThumbnail('https://cdn.webshopapp.com/shops/38765/files/240458996/geeek-mystic-magic-8-ball-future-prediction-ball.jpg')
             .setColor('BLUE')
+            .setTimestamp()
             .setFooter('Powered by ShoesBot', 'https://i.imgur.com/DiHfi2e.png')
 
             msg.channel.send(eightBallEmbed);
