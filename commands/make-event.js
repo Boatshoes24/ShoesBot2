@@ -5,7 +5,7 @@ const ROLE_REAL_MAD = '<@&450508412527312896';
 const ROLE_MAD = '<@&450216070003949568>';
 const ROLE_HEALTH_JUICER = '<@&566805261663207450>';
 const ROLE_TRIAL = '<@&569186360267767848>';
-const ROLE_AGITATED = '<@&495328632378621972>';
+const ROLE_HANGRY = '<@&744052129014218752>';
 
 const CHANNELS = ['sales-info', 'general'];
 
@@ -31,7 +31,7 @@ module.exports = {
             if (args[args.length - 1] == 'all' || args[args.length - 1].includes('raider')) {
                 const sendTo = args.pop();
                 if (sendTo === 'all') {
-                    msg.channel.send(`${ROLE_REAL_MAD}${ROLE_MAD}${ROLE_HEALTH_JUICER}${ROLE_TRIAL}${ROLE_AGITATED}`);
+                    msg.channel.send(`${ROLE_REAL_MAD}${ROLE_MAD}${ROLE_HEALTH_JUICER}${ROLE_TRIAL}${ROLE_HANGRY}`);
                 } else if (sendTo.includes('raider')) {
                     msg.channel.send(`${ROLE_REAL_MAD}${ROLE_MAD}${ROLE_HEALTH_JUICER}${ROLE_TRIAL}`);
                 }
