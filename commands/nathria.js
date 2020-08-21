@@ -4,7 +4,7 @@ const nathriaGuides = require('./nathriaGuides.json');
 
 const packHeader = '**__WA - Packs__**';
 const soloHeader = '**__WA - Individual__**';
-const guideHeader = '**__Guides__**';
+const guideHeader = '**__Guides__**\nGuide links will be updated as they become available. Let me know if you come across better ones.';
 let packDescription = ' ';
 let soloDescription = ' ';
 let guideDescription = ' ';
@@ -17,7 +17,7 @@ nathriaLinks.forEach(item => {
 })
 
 nathriaGuides.forEach(item => {
-    guideDescription += `${item.name} - [Text](${item.textGuide}) \u2022 [Video Soon](${item.videoGuide})\n`
+    guideDescription += `${item.name} - [Text](${item.textGuide}) \u2022 [Heroic](${item.heroicVideo}) \u2022 [Mythic](${item.mythicVideo})\n`
 })
 
 let description = `${packHeader}\n${packDescription}\n${soloHeader}\n${soloDescription}\n${guideHeader}\n${guideDescription}`;
