@@ -14,6 +14,20 @@
     },
 
     {
+        "name": "Causese",
+        "urlMask": "Nathria Co-Tank Auras",
+        "url": "https://wago.io/slcotank1",
+        "category": "pack"
+    },
+
+    {
+        "name": "Venocx",
+        "urlMask": "Nameplate Interrupt Anchors",
+        "url": "https://wago.io/QT27xzhrh",
+        "category": "pack"
+    },
+
+    {
         "name": "Reloe",
         "urlMask": "Reloe Raid Glows",
         "url": "https://wago.io/NathriaGlows",
@@ -25,5 +39,12 @@
         "urlMask": "Castle Nathria Casts",
         "url": "https://wago.io/BtlslAw4U",
         "category": "pack"
+    },
+
+    {
+        "name": "Causese",
+        "urlMask": "Danse Macabre ActionButton Glow (Default and ElvUI only)",
+        "url": "https://wago.io/C837vu1ru",
+        "category": "solo"
     }
 ]
