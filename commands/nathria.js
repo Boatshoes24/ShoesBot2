@@ -4,10 +4,9 @@ const nathriaGuides = require('./nathriaGuides.json');
 
 const packHeader = '**__WA - Packs__**';
 const soloHeader = '**__WA - Individual__**';
-const guideHeader = '**__Guides__**\nGuide links will be updated as they become available. Let me know if you come across better ones.';
+const guideHeader = '**__Guides__**\nGuides will be updated as available. Let me know if you find better links.';
 let packDescription = ' ';
 let soloDescription = ' ';
-let guideDescription = ' ';
 
 nathriaLinks.forEach(item => {
     if (item.category === 'pack')
@@ -16,11 +15,12 @@ nathriaLinks.forEach(item => {
         soloDescription += `${item.name} - [${item.urlMask}](${item.url})\n`;
 })
 
-nathriaGuides.forEach(item => {
-    guideDescription += `${item.name} - [Text](${item.textGuide}) \u2022 [Heroic](${item.heroicVideo}) \u2022 [Mythic](${item.mythicVideo})\n`
-})
+let description = `${packHeader}\n${packDescription}\n${soloHeader}\n${soloDescription}\n${guideHeader}\n`;
 
-let description = `${packHeader}\n${packDescription}\n${soloHeader}\n${soloDescription}\n${guideHeader}\n${guideDescription}`;
+const guideFields = [];
+nathriaGuides.forEach(item => {
+    guideFields.push({ name: item.name, value: `[Text](${item.textGuide}) \u2022 [Heroic](${item.heroicVideo}) \u2022 [Mythic](${item.mythicVideo})`, inline: false})
+})
 
 module.exports = {
     name: 'nathria',
@@ -32,6 +32,7 @@ module.exports = {
         .setTitle("Castle Nathria Info")
         .setThumbnail('https://gamepedia.cursecdn.com/wowpedia/3/30/Denathrius.jpg')
         .setDescription(description)
+        .addFields(guideFields)
         .setColor('RED')
         .setTimestamp()
         .setFooter('Powered by ShoesBot', 'https://i.imgur.com/DiHfi2e.png')
