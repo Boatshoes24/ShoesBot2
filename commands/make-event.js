@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const roles = require('./roles.json');
 
-const ROLE_REAL_MAD = '<@&450508412527312896';
+const ROLE_REAL_MAD = '<@&450508412527312896>';
 const ROLE_MAD = '<@&450216070003949568>';
 const ROLE_HEALTH_JUICER = '<@&566805261663207450>';
 const ROLE_TRIAL = '<@&569186360267767848>';
