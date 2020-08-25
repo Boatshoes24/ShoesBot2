@@ -1,7 +1,8 @@
 module.exports = {
-    name = 'boneless',
-    args = false,
-    aliases = ['bonelesswingsarebetter'],
+    name: 'boneless',
+    description: 'the real answer',
+    args: false,
+    aliases: ['bonelesswingsarebetter'],
     execute(msg, args) {
         try {
             msg.reply('That is incorrect');
