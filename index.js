@@ -19,6 +19,12 @@ client.on('ready', () => {
 });
 
 client.on('message', msg => {
+
+    //just for troy
+    if (msg.author.id === '192664999590625280' ) {
+        msg.react('571089901974716416').catch(err => console.error(err));
+    }
+
     if (!msg.content.startsWith(prefix) || msg.author.bot) return;
 
     const args = msg.content.slice(prefix.length).trim().split(/ +/);
