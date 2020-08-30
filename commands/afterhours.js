@@ -1,5 +1,3 @@
-const { TextBasedChannel } = require("discord.js");
-
 module.exports = {
     name: 'afterhours',
     description: 'What happens in Stay Mad after hours',
