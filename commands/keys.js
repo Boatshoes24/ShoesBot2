@@ -52,7 +52,7 @@ async function getRIOAffixes() {
 module.exports = {
     name: 'keys',
     description: 'api fetch of m+ weekly information',
-    aliases: [],
+    aliases: ['key'],
     args: false,
     cooldown: 5,
     usage: '(optional) <player name> <server (if not on Area 52)>',
