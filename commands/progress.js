@@ -20,19 +20,17 @@ module.exports = {
        }
        const data = await getData(url);
        const rp = data.raid_progression;
-    //    const nathria = "castle-nathria"
-    //    const apiEmbed = new Discord.MessageEmbed()
-    //    .setColor('RED')
-    //    .setTitle(`${data.name} Raid Progress`)
-    //    .setDescription(`[**Guild RIO Profile**](${data.profile_url})`)
-    //    .addFields(
-    //        { name: 'Castle Nathria', value: rp.nathria.summary, inline: false },
-    //    )
-    //    .setThumbnail('https://i.imgur.com/DiHfi2e.png')
-    //    .setTimestamp()
-    //    .setFooter('Powered by ShoesBot', 'https://i.imgur.com/DiHfi2e.png')
+       const apiEmbed = new Discord.MessageEmbed()
+       .setColor('RED')
+       .setTitle(`${data.name} Raid Progress`)
+       .setDescription(`[**Guild RIO Profile**](${data.profile_url})`)
+       .addFields(
+           { name: 'Castle Nathria', value: rp['castle-nathria'].summary, inline: false },
+       )
+       .setThumbnail('https://i.imgur.com/DiHfi2e.png')
+       .setTimestamp()
+       .setFooter('Powered by ShoesBot', 'https://i.imgur.com/DiHfi2e.png')
 
-    //    msg.channel.send(rp);
-    console.log(rp);
+       msg.channel.send(rp);
     }
 }
