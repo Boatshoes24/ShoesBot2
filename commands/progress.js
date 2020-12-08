@@ -25,10 +25,7 @@ module.exports = {
        .setTitle(`${data.name} Raid Progress`)
        .setDescription(`[**Guild RIO Profile**](${data.profile_url})`)
        .addFields(
-           { name: 'Uldir', value: rp.uldir.summary, inline: false },
-           { name: 'Battle of Dazaralor', value: rp['battle-of-dazaralor'].summary, inline: false },
-           { name: 'Eternal Palace', value: rp['the-eternal-palace'].summary, inline: false },
-           { name: 'Nyalotha', value: rp['nyalotha-the-waking-city'].summary, inline: false }
+           { name: 'Castle Nathria', value: rp.castle-nathria.summary, inline: false },
        )
        .setThumbnail('https://i.imgur.com/DiHfi2e.png')
        .setTimestamp()
