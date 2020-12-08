@@ -46,5 +46,11 @@
         "urlMask": "Danse Macabre ActionButton Glow (Default and ElvUI only)",
         "url": "https://wago.io/C837vu1ru",
         "category": "solo"
+    },
+    {
+        "name": "Venocx",
+        "urlMask": "Nathria Interrupts to Nameplate",
+        "url": "https://wago.io/QT27xzhrh",
+        "category": "solo"
     }
 ]
