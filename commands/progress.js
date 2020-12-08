@@ -31,6 +31,7 @@ module.exports = {
        .setTimestamp()
        .setFooter('Powered by ShoesBot', 'https://i.imgur.com/DiHfi2e.png')
 
-       msg.channel.send(apiEmbed);
+       //msg.channel.send(apiEmbed);
+       msg.channel.send(rp);
     }
 }
