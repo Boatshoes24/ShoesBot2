@@ -1,70 +1,70 @@
 [
     {
         "name": "Shriekwing",
-        "textGuide": "https://www.wowhead.com/guides/shriekwing-castle-nathria-strategy-guide",
+        "textGuide": "https://complexity.gg/heroic-shriekwing-boss-guide/",
         "heroicVideo": "https://youtu.be/vk_BPJSmLK4",
         "mythicVideo": "https://youtu.be/1EhF9WwM63I"
     },
 
     {
         "name": "Altimor the Huntsman",
-        "textGuide": "https://www.wowhead.com/guides/altimor-the-huntsman-castle-nathria-strategy-guide",
+        "textGuide": "https://complexity.gg/heroic-huntsman-boss-guide/",
         "heroicVideo": "https://youtu.be/-ZJKNP_AhHI",
         "mythicVideo": "https://youtu.be/9977TmmgKNA"
     },
 
     {
         "name": "Hungering Destroyer",
-        "textGuide": "https://www.wowhead.com/guides/hungering-destroyer-castle-nathria-strategy-guide",
+        "textGuide": "https://complexity.gg/heroic-destroyer-boss-guide/",
         "heroicVideo": "https://youtu.be/iRLHWTJTtN4",
         "mythicVideo": "https://youtu.be/G-NpxGkmnHg"
     },
 
     {
         "name": "Artificer Xy'Mox",
-        "textGuide": "https://www.wowhead.com/guides/artificer-xymox-castle-nathria-strategy-guide",
+        "textGuide": "https://complexity.gg/heroic-artificer-xymox-boss-guide/",
         "heroicVideo": "https://youtu.be/SKuRqo5gMo8",
         "mythicVideo": "https://www.youtube.com/"
     },
 
     {
         "name": "Sun King's Salvation",
-        "textGuide": "https://www.wowhead.com/guides/sun-kings-salvation-kaelthas-sunstrider-castle-nathria-strategy-guide",
+        "textGuide": "https://complexity.gg/heroic-kaelthas-boss-guide/",
         "heroicVideo": "https://youtu.be/VWkG7yGyuRs",
         "mythicVideo": "https://youtu.be/RPpQeuKlzVA"
     },
 
     {
         "name": "Lady Inerva Darkvein",
-        "textGuide": "https://www.wowhead.com/guides/lady-inerva-darkvein-castle-nathria-strategy-guide",
+        "textGuide": "https://complexity.gg/heroic-lady-inerva-darkvein-boss-guide/",
         "heroicVideo": "https://youtu.be/PPjYPq-gKa8",
         "mythicVideo": "https://youtu.be/ofb0U6BGdAU"
     },
 
     {
         "name": "The Council of Blood",
-        "textGuide": "https://www.wowhead.com/guides/the-council-of-blood-castle-nathria-strategy-guide",
+        "textGuide": "https://complexity.gg/heroic-council-of-blood-guide/",
         "heroicVideo": "https://youtu.be/Pv3iCPkJXGA",
         "mythicVideo": "https://www.youtube.com/"
     },
 
     {
         "name": "Sludgefist",
-        "textGuide": "https://www.wowhead.com/guides/sludgefist-castle-nathria-raid-strategy",
+        "textGuide": "https://complexity.gg/heroic-sludgefist-boss-guide/",
         "heroicVideo": "https://youtu.be/_pq0f0xHcyc",
         "mythicVideo": "https://youtu.be/fK6QGa-wvNQ"
     },
 
     {
         "name": "Stone Legion Generals",
-        "textGuide": "https://www.wowhead.com/guides/stoneborne-generals-castle-nathria-raid-strategy",
+        "textGuide": "https://complexity.gg/heroic-stone-legion-generals-boss-guide/",
         "heroicVideo": "https://youtu.be/e4YPp1Cmx3M",
         "mythicVideo": "https://youtu.be/xpzLOsujRyY"
     },
 
     {
         "name": "Sire Denathrius",
-        "textGuide": "https://www.wowhead.com/guides/sire-denathrius-castle-nathria-raid-strategy",
+        "textGuide": "https://complexity.gg/heroic-denathrius-boss-guide/",
         "heroicVideo": "https://youtu.be/K2eBw2BDet8",
         "mythicVideo": "https://www.youtube.com/"
     }
