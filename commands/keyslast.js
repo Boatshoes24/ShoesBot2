@@ -28,7 +28,7 @@ function ConvertTime(timeMS) {
 }
 
 async function getRIO(name, server) {
-    const rioURL = `${RIO_URL}&realm=${server}&name=${name}&fields=mythic_plus_weekly_highest_level_runs`;
+    const rioURL = `${RIO_URL}&realm=${server}&name=${name}&fields=mythic_plus_previous_weekly_highest_level_runs`;
     try {
         const res = await fetch(rioURL)
             .then(res => res.json()).catch(err => console.error(err));
@@ -50,9 +50,9 @@ async function getRIOAffixes() {
 }
 
 module.exports = {
-    name: 'keys',
+    name: 'keyslast',
     description: 'api fetch of m+ weekly information',
-    aliases: ['key'],
+    aliases: ['keylast'],
     args: false,
     cooldown: 5,
     usage: '(optional) <player name> <server (if not on Area 52)>',
@@ -79,15 +79,15 @@ module.exports = {
                     
                     // retrieve raider io api data
                     const rioData = await getRIO(playerName, server);
-                    title = `${rioData.name} - Current Week M+ Info`;
+                    title = `${rioData.name} - Last Week M+ Info`;
                     thumbnail = rioData.thumbnail_url;
-                    if (rioData.mythic_plus_weekly_highest_level_runs.length === 0) {
+                    if (rioData.mythic_plus_previous_weekly_highest_level_runs.length === 0) {
                         description += `Uh oh, looks like someone has been naughty this week!`;
                         naughtyImg = `https://i.ytimg.com/vi/ZlsR6kD8EsA/maxresdefault.jpg`;
                     }
                     else {
-                        description += '**__Best Runs this week (limited to top 10)__**\n\n';
-                        rioData.mythic_plus_weekly_highest_level_runs.forEach(item => {
+                        description += '**__Best Runs last week (limited to top 10)__**\n\n';
+                        rioData.mythic_plus_previous_weekly_highest_level_runs.forEach(item => {
                             description += `**${item.short_name}** (+${item.mythic_level})\nBonus: +${item.num_keystone_upgrades} - Time: ${ConvertTime(item.clear_time_ms)}\n\n`;
                         })
                     }
