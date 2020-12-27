@@ -82,7 +82,7 @@ module.exports = {
                     title = `${rioData.name} - Current Week M+ Info`;
                     thumbnail = rioData.thumbnail_url;
                     if (rioData.mythic_plus_weekly_highest_level_runs.length === 0) {
-                        description += `Uh oh, looks like someone has been naughty this week!`;
+                        description += `Uh oh, someone's has been naughty this week!`;
                         naughtyImg = `https://i.ytimg.com/vi/ZlsR6kD8EsA/maxresdefault.jpg`;
                     }
                     else {
