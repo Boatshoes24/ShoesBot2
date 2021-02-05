@@ -16,7 +16,7 @@
     },
 
     {
-        "twitchName": "kepi24",
+        "twitchName": "kepi_24",
         "displayName": "Kepi",
         "twitchLink": "[Stream Link](https://twitch.tv/kepi24)",
         "role": "Dps",
@@ -28,22 +28,6 @@
         "displayName": "Deli",
         "twitchLink": "[Stream Link](https://twitch.tv/deliimeat)",
         "role": "Heals",
-        "inline": true
-    },
-
-    {
-        "twitchName": "thegnarlyharley",
-        "displayName": "Gnarly",
-        "twitchLink": "[Stream Link](https://twitch.tv/thegnarlyharley)",
-        "role": "Dps",
-        "inline": true
-    },
-
-    {
-        "twitchName": "quarkyguy",
-        "displayName": "Quarky",
-        "twitchLink": "[Stream Link](https://twitch.tv/quarkyguy)",
-        "role": "Dps",
         "inline": true
     },
 
