@@ -1,49 +1,57 @@
 [
-    {
-        "twitchName": "getthatgoat",
-        "displayName": "Shoes",
-        "twitchLink": "[Stream Link](https://twitch.tv/getthatgoat)",
-        "role": "Tank",
-        "inline": true
-    },
+  {
+    "twitchName": "getthatgoat",
+    "displayName": "Shoes",
+    "twitchLink": "[Stream Link](https://twitch.tv/getthatgoat)",
+    "role": "Tank",
+    "inline": true
+  },
 
-    {
-        "twitchName": "shodaiwan",
-        "displayName": "Showda",
-        "twitchLink": "[Stream Link](https://www.twitch.tv/shodaiwan)",
-        "role": "Dps",
-        "inline": true
-    },
+  {
+    "twitchName": "shodaiwan",
+    "displayName": "Showda",
+    "twitchLink": "[Stream Link](https://www.twitch.tv/shodaiwan)",
+    "role": "Dps",
+    "inline": true
+  },
 
-    {
-        "twitchName": "kepi_24",
-        "displayName": "Kepi",
-        "twitchLink": "[Stream Link](https://twitch.tv/kepi24)",
-        "role": "Dps",
-        "inline": true
-    },
+  {
+    "twitchName": "kepi_24",
+    "displayName": "Kepi",
+    "twitchLink": "[Stream Link](https://twitch.tv/kepi24)",
+    "role": "Dps",
+    "inline": true
+  },
 
-    {
-        "twitchName": "deliimeat",
-        "displayName": "Deli",
-        "twitchLink": "[Stream Link](https://twitch.tv/deliimeat)",
-        "role": "Heals",
-        "inline": true
-    },
+  {
+    "twitchName": "deliimeat",
+    "displayName": "Deli",
+    "twitchLink": "[Stream Link](https://twitch.tv/deliimeat)",
+    "role": "Heals",
+    "inline": true
+  },
 
-    {
-        "twitchName": "krazykraka0",
-        "displayName": "Kwazy",
-        "twitchLink": "[Stream Link](https://twitch.tv/krazykraka0)",
-        "role": "Heals",
-        "inline": true
-    },
+  {
+    "twitchName": "krazykraka0",
+    "displayName": "Kwazy",
+    "twitchLink": "[Stream Link](https://twitch.tv/krazykraka0)",
+    "role": "Heals",
+    "inline": true
+  },
 
-    {
-        "twitchName": "riptarx",
-        "displayName": "Rip",
-        "twitchLink": "[Stream Link](https://twitch.tv/riptarx)",
-        "role": "Dps",
-        "inline": true
-    }
+  {
+    "twitchName": "Illmage_",
+    "displayName": "Illmage",
+    "twitchLink": "[Stream Link](https://twitch.tv/illmage_)",
+    "role": "Dps",
+    "inline": true
+  },
+
+  {
+    "twitchName": "patches_tv",
+    "displayName": "Zethek",
+    "twitchLink": "[Stream Link](https://twitch.tv/patches_tv)",
+    "role": "Dps",
+    "inline": true
+  }
 ]
