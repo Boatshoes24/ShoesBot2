@@ -31,6 +31,7 @@ client.on('message', (msg) => {
     let rName = msg.embeds[0].author.name;
     let splitName = rName.split(' | ');
     let ilvl = splitName[splitName.length - 1].match(/\d/g);
+    console.log(rName, splitName, ilvl);
 
     classNeeds.forEach((item) => {
       if (rName.includes(item.name) && item.recruiting == true && ilvl >= item.itemLevel) {
