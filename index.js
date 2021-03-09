@@ -33,12 +33,9 @@ client.on('message', (msg) => {
     let ilvl = splitName[splitName.length - 1].match(/\d/g);
 
     classNeeds.forEach((item) => {
-      if (
-        rName.includes(item.name) &&
-        item.recruiting == true &&
-        ilvl >= item.itemLevel
-      ) {
+      if (rName.includes(item.name) && item.recruiting == true && ilvl >= item.itemLevel) {
         try {
+          console.log(rName, item.recruiting, ilvl, item.itemLevel);
           let destChannel = client.channels.cache.get('818895487074828380');
 
           let destEmbed = new Discord.MessageEmbed()
@@ -47,10 +44,7 @@ client.on('message', (msg) => {
             .setTimestamp(msg.embeds[0].timestamp)
             .addFields(msg.embeds[0].fields)
             .setThumbnail(msg.embeds[0].thumbnail.url)
-            .setFooter(
-              'Powered by ShoesBot',
-              'https://i.imgur.com/DiHfi2e.png'
-            );
+            .setFooter('Powered by ShoesBot','https://i.imgur.com/DiHfi2e.png')
           destChannel.send(destEmbed);
         } catch (error) {
           console.error(error);
