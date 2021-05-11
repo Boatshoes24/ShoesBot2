@@ -22,10 +22,6 @@ client.on('ready', () => {
 });
 
 client.on('message', (msg) => {
-  //just for troy
-  if (msg.author.id === '192664999590625280') {
-    msg.react('571089901974716416').catch((err) => console.error(err));
-  }
 
   if (msg.author.username === 'Jeeves Recruitment') {
     let rName = msg.embeds[0].author.name;
