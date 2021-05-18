@@ -2,6 +2,8 @@ const fs = require('fs');
 const Discord = require('discord.js');
 const { prefix } = require('./config.json');
 const classNeeds = require('./commands/classNeeds.json');
+const fetch = require('node-fetch');
+const RIO_URL = 'https://raider.io/api/v1/characters/profile?';
 
 const client = new Discord.Client();
 client.commands = new Discord.Collection();
@@ -21,6 +23,17 @@ client.on('ready', () => {
   client.user.setActivity('!help for commands', { type: 'PLAYING' });
 });
 
+async function getRIO(name, server, region) {
+    const rioURL = `${RIO_URL}region=${region}&realm=${server}&name=${name}&fields=guild`;
+    try {
+        const res = await fetch(rioURL)
+            .then(res => res.json()).catch(err => console.error(err));
+        return res;
+    } catch(err) {
+        console.error(err);
+    }
+}
+
 client.on('message', (msg) => {
 
   if (msg.author.username === 'Jeeves Recruitment') {
@@ -28,6 +41,44 @@ client.on('message', (msg) => {
     let splitName = rName.split(' | ');
     let ilvl = splitName[splitName.length - 1].match(/\d/g);
     ilvl = parseInt(ilvl.join(""));
+
+    let spacedName = rName.split(" ");
+    let charName = spacedName[0].toLowerCase();
+    let realm = '';
+    let region = '';
+    if(spacedName[3].includes('(')){
+      realm = spacedName[2].toLowerCase();
+      region = spacedName[3].match(/[a-z]/gi).join('').toLowerCase();
+    } else {
+      realm = `${spacedName[2].toLowerCase()} ${spacedName[3].toLowerCase()}`;
+      region = spacedName[4].match(/[a-z]/gi).join('').toLowerCase();
+    }
+
+    if (region === 'us' && realm === 'area 52') {
+      try {
+        getRIO(charName, realm, region)
+        .then(function(result) {
+          if (result.guild !== null) {
+            let guild = result.guild.name;
+            if (guild.toLowerCase() === 'stay mad') {
+
+              let destChannel = client.channels.cache.get('841639042588213259');
+
+              let destEmbed = new Discord.MessageEmbed()
+              .setAuthor(msg.embeds[0].author.name)
+              .setColor(msg.embeds[0].color)
+              .setTimestamp(msg.embeds[0].timestamp)
+              .addFields(msg.embeds[0].fields)
+              .setThumbnail(msg.embeds[0].thumbnail.url)
+              .setFooter('Powered by ShoesBot','https://i.imgur.com/DiHfi2e.png')
+              destChannel.send(destEmbed);   
+            }
+          }          
+        });
+      } catch(error) {
+        console.error(error);
+      }       
+    }
 
     classNeeds.forEach((item) => {
       if (rName.includes(item.name) && item.recruiting == true && ilvl >= item.itemLevel) {

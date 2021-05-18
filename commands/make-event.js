@@ -48,9 +48,18 @@ module.exports = {
             .setTimestamp()
             .setFooter('Powered by ShoesBot', 'https://i.imgur.com/DiHfi2e.png')
 
-            msg.channel.send(eventEmbed).then(sentMsg => {
-                sentMsg.react('👍')
-            })
+            const c_emoji = String.fromCodePoint("C".codePointAt(0) - 65 + 0x1f1e6);
+            const l_emoji = String.fromCodePoint("L".codePointAt(0) - 65 + 0x1f1e6);
+            const m_emoji = String.fromCodePoint("M".codePointAt(0) - 65 + 0x1f1e6);
+            const p_emoji = String.fromCodePoint("P".codePointAt(0) - 65 + 0x1f1e6);
+
+             msg.channel.send(eventEmbed)
+                .then(async function(msg) {
+                    await msg.react(c_emoji)
+                    await msg.react(l_emoji)
+                    await msg.react(m_emoji)
+                    await msg.react(p_emoji)
+                });
         } catch(err) {
             console.error(err);
             msg.reply('There was an issue creating your event. Please try again or report this issue.');
