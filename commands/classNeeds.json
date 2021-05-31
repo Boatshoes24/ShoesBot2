@@ -6,12 +6,12 @@
   },
   {
     "name": "Unholy Death Knight",
-    "recruiting": true,
+    "recruiting": false,
     "itemLevel": 223
   },
   {
     "name": "Frost Death Knight",
-    "recruiting": true,
+    "recruiting": false,
     "itemLevel": 223
   },
   {
@@ -27,7 +27,7 @@
   {
     "name": "Balance Druid",
     "recruiting": true,
-    "itemLevel": 224
+    "itemLevel": 225
   },
   {
     "name": "Feral Druid",
@@ -52,7 +52,7 @@
   {
     "name": "Marksmanship Hunter",
     "recruiting": true,
-    "itemLevel": 224
+    "itemLevel": 226
   },
   {
     "name": "Survival Hunter",
@@ -66,12 +66,12 @@
   },
   {
     "name": "Fire Mage",
-    "recruiting": true,
+    "recruiting": false,
     "itemLevel": 224
   },
   {
     "name": "Frost Mage",
-    "recruiting": true,
+    "recruiting": false,
     "itemLevel": 224
   },
   {
@@ -86,7 +86,7 @@
   },
   {
     "name": "Windwalker Monk",
-    "recruiting": true,
+    "recruiting": false,
     "itemLevel": 224
   },
   {
@@ -146,23 +146,23 @@
   },
   {
     "name": "Restoration Shaman",
-    "recruiting": true,
+    "recruiting": false,
     "itemLevel": 220
   },
   {
     "name": "Affliction Warlock",
     "recruiting": true,
-    "itemLevel": 224
+    "itemLevel": 225
   },
   {
     "name": "Demonology Warlock",
-    "recruiting": false,
-    "itemLevel": 223
+    "recruiting": true,
+    "itemLevel": 225
   },
   {
     "name": "Destruction Warlock",
     "recruiting": true,
-    "itemLevel": 224
+    "itemLevel": 225
   },
   {
     "name": "Arms Warrior",
