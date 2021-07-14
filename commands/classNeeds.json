@@ -91,8 +91,8 @@
   },
   {
     "name": "Holy Paladin",
-    "recruiting": false,
-    "itemLevel": 221
+    "recruiting": true,
+    "itemLevel": 228
   },
   {
     "name": "Protection Paladin",
