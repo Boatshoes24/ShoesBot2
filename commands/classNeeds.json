@@ -27,7 +27,7 @@
   {
     "name": "Balance Druid",
     "recruiting": true,
-    "itemLevel": 225
+    "itemLevel": 230
   },
   {
     "name": "Feral Druid",
@@ -51,7 +51,7 @@
   },
   {
     "name": "Marksmanship Hunter",
-    "recruiting": true,
+    "recruiting": false,
     "itemLevel": 226
   },
   {
@@ -92,7 +92,7 @@
   {
     "name": "Holy Paladin",
     "recruiting": true,
-    "itemLevel": 228
+    "itemLevel": 230
   },
   {
     "name": "Protection Paladin",
@@ -116,8 +116,8 @@
   },
   {
     "name": "Shadow Priest",
-    "recruiting": false,
-    "itemLevel": 223
+    "recruiting": true,
+    "itemLevel": 230
   },
   {
     "name": "Assassination Rogue",
@@ -136,8 +136,8 @@
   },
   {
     "name": "Elemental Shaman",
-    "recruiting": false,
-    "itemLevel": 222
+    "recruiting": true,
+    "itemLevel": 230
   },
   {
     "name": "Enhancement Shaman",
@@ -152,17 +152,17 @@
   {
     "name": "Affliction Warlock",
     "recruiting": true,
-    "itemLevel": 225
+    "itemLevel": 230
   },
   {
     "name": "Demonology Warlock",
     "recruiting": true,
-    "itemLevel": 225
+    "itemLevel": 230
   },
   {
     "name": "Destruction Warlock",
     "recruiting": true,
-    "itemLevel": 225
+    "itemLevel": 230
   },
   {
     "name": "Arms Warrior",
