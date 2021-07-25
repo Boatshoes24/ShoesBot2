@@ -2,181 +2,181 @@
   {
     "name": "Blood Death Knight",
     "recruiting": false,
-    "itemLevel": 223
+    "itemLevel": 235
   },
   {
     "name": "Unholy Death Knight",
     "recruiting": false,
-    "itemLevel": 223
+    "itemLevel": 235
   },
   {
     "name": "Frost Death Knight",
     "recruiting": false,
-    "itemLevel": 223
+    "itemLevel": 235
   },
   {
     "name": "Havoc Demon Hunter",
     "recruiting": false,
-    "itemLevel": 223
+    "itemLevel": 235
   },
   {
     "name": "Vengeance Demon Hunter",
     "recruiting": false,
-    "itemLevel": 223
+    "itemLevel": 235
   },
   {
     "name": "Balance Druid",
     "recruiting": true,
-    "itemLevel": 230
+    "itemLevel": 235
   },
   {
     "name": "Feral Druid",
     "recruiting": false,
-    "itemLevel": 223
+    "itemLevel": 235
   },
   {
     "name": "Guardian Druid",
     "recruiting": false,
-    "itemLevel": 223
+    "itemLevel": 235
   },
   {
     "name": "Restoration Druid",
     "recruiting": false,
-    "itemLevel": 223
+    "itemLevel": 235
   },
   {
     "name": "Beast Mastery Hunter",
     "recruiting": false,
-    "itemLevel": 223
+    "itemLevel": 235
   },
   {
     "name": "Marksmanship Hunter",
     "recruiting": false,
-    "itemLevel": 226
+    "itemLevel": 235
   },
   {
     "name": "Survival Hunter",
     "recruiting": false,
-    "itemLevel": 223
+    "itemLevel": 235
   },
   {
     "name": "Arcane Mage",
     "recruiting": false,
-    "itemLevel": 223
+    "itemLevel": 235
   },
   {
     "name": "Fire Mage",
     "recruiting": false,
-    "itemLevel": 224
+    "itemLevel": 235
   },
   {
     "name": "Frost Mage",
     "recruiting": false,
-    "itemLevel": 224
+    "itemLevel": 235
   },
   {
     "name": "Brewmaster Monk",
     "recruiting": false,
-    "itemLevel": 223
+    "itemLevel": 235
   },
   {
     "name": "Mistweaver Monk",
     "recruiting": false,
-    "itemLevel": 223
+    "itemLevel": 235
   },
   {
     "name": "Windwalker Monk",
     "recruiting": false,
-    "itemLevel": 224
+    "itemLevel": 235
   },
   {
     "name": "Holy Paladin",
     "recruiting": true,
-    "itemLevel": 230
+    "itemLevel": 235
   },
   {
     "name": "Protection Paladin",
     "recruiting": false,
-    "itemLevel": 223
+    "itemLevel": 235
   },
   {
     "name": "Retribution Paladin",
     "recruiting": false,
-    "itemLevel": 223
+    "itemLevel": 235
   },
   {
     "name": "Discipline Priest",
     "recruiting": false,
-    "itemLevel": 223
+    "itemLevel": 235
   },
   {
     "name": "Holy Priest",
     "recruiting": false,
-    "itemLevel": 223
+    "itemLevel": 235
   },
   {
     "name": "Shadow Priest",
     "recruiting": true,
-    "itemLevel": 230
+    "itemLevel": 235
   },
   {
     "name": "Assassination Rogue",
     "recruiting": false,
-    "itemLevel": 223
+    "itemLevel": 235
   },
   {
     "name": "Outlaw Rogue",
     "recruiting": false,
-    "itemLevel": 223
+    "itemLevel": 235
   },
   {
     "name": "Subtlety Rogue",
     "recruiting": false,
-    "itemLevel": 223
+    "itemLevel": 235
   },
   {
     "name": "Elemental Shaman",
     "recruiting": true,
-    "itemLevel": 230
+    "itemLevel": 235
   },
   {
     "name": "Enhancement Shaman",
     "recruiting": false,
-    "itemLevel": 223
+    "itemLevel": 235
   },
   {
     "name": "Restoration Shaman",
     "recruiting": false,
-    "itemLevel": 220
+    "itemLevel": 235
   },
   {
     "name": "Affliction Warlock",
     "recruiting": true,
-    "itemLevel": 230
+    "itemLevel": 235
   },
   {
     "name": "Demonology Warlock",
     "recruiting": true,
-    "itemLevel": 230
+    "itemLevel": 235
   },
   {
     "name": "Destruction Warlock",
     "recruiting": true,
-    "itemLevel": 230
+    "itemLevel": 235
   },
   {
     "name": "Arms Warrior",
     "recruiting": false,
-    "itemLevel": 223
+    "itemLevel": 235
   },
   {
     "name": "Fury Warrior",
     "recruiting": false,
-    "itemLevel": 223
+    "itemLevel": 235
   },
   {
     "name": "Protection Warrior",
     "recruiting": false,
-    "itemLevel": 223
+    "itemLevel": 235
   }
 ]
