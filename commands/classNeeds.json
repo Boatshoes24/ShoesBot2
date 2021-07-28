@@ -16,7 +16,7 @@
   },
   {
     "name": "Havoc Demon Hunter",
-    "recruiting": false,
+    "recruiting": true,
     "itemLevel": 235
   },
   {
@@ -116,7 +116,7 @@
   },
   {
     "name": "Shadow Priest",
-    "recruiting": true,
+    "recruiting": false,
     "itemLevel": 235
   },
   {
@@ -166,12 +166,12 @@
   },
   {
     "name": "Arms Warrior",
-    "recruiting": false,
+    "recruiting": true,
     "itemLevel": 235
   },
   {
     "name": "Fury Warrior",
-    "recruiting": false,
+    "recruiting": true,
     "itemLevel": 235
   },
   {
