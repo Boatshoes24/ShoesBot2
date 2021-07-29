@@ -151,17 +151,17 @@
   },
   {
     "name": "Affliction Warlock",
-    "recruiting": true,
+    "recruiting": false,
     "itemLevel": 235
   },
   {
     "name": "Demonology Warlock",
-    "recruiting": true,
+    "recruiting": false,
     "itemLevel": 235
   },
   {
     "name": "Destruction Warlock",
-    "recruiting": true,
+    "recruiting": false,
     "itemLevel": 235
   },
   {
