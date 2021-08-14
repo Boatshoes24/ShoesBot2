@@ -27,7 +27,7 @@
   {
     "name": "Balance Druid",
     "recruiting": true,
-    "itemLevel": 235
+    "itemLevel": 240
   },
   {
     "name": "Feral Druid",
@@ -46,13 +46,13 @@
   },
   {
     "name": "Beast Mastery Hunter",
-    "recruiting": false,
-    "itemLevel": 235
+    "recruiting": true,
+    "itemLevel": 240
   },
   {
     "name": "Marksmanship Hunter",
-    "recruiting": false,
-    "itemLevel": 235
+    "recruiting": true,
+    "itemLevel": 240
   },
   {
     "name": "Survival Hunter",
@@ -92,7 +92,7 @@
   {
     "name": "Holy Paladin",
     "recruiting": true,
-    "itemLevel": 235
+    "itemLevel": 240
   },
   {
     "name": "Protection Paladin",
@@ -101,8 +101,8 @@
   },
   {
     "name": "Retribution Paladin",
-    "recruiting": false,
-    "itemLevel": 235
+    "recruiting": true,
+    "itemLevel": 240
   },
   {
     "name": "Discipline Priest",
@@ -137,7 +137,7 @@
   {
     "name": "Elemental Shaman",
     "recruiting": true,
-    "itemLevel": 235
+    "itemLevel": 240
   },
   {
     "name": "Enhancement Shaman",
@@ -151,28 +151,28 @@
   },
   {
     "name": "Affliction Warlock",
-    "recruiting": false,
-    "itemLevel": 235
+    "recruiting": true,
+    "itemLevel": 240
   },
   {
     "name": "Demonology Warlock",
-    "recruiting": false,
-    "itemLevel": 235
+    "recruiting": true,
+    "itemLevel": 240
   },
   {
     "name": "Destruction Warlock",
-    "recruiting": false,
-    "itemLevel": 235
+    "recruiting": true,
+    "itemLevel": 240
   },
   {
     "name": "Arms Warrior",
     "recruiting": true,
-    "itemLevel": 235
+    "itemLevel": 240
   },
   {
     "name": "Fury Warrior",
     "recruiting": true,
-    "itemLevel": 235
+    "itemLevel": 240
   },
   {
     "name": "Protection Warrior",
