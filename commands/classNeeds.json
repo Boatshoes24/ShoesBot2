@@ -141,8 +141,8 @@
   },
   {
     "name": "Enhancement Shaman",
-    "recruiting": false,
-    "itemLevel": 235
+    "recruiting": true,
+    "itemLevel": 246
   },
   {
     "name": "Restoration Shaman",
