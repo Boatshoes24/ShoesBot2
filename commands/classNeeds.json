@@ -61,18 +61,18 @@
   },
   {
     "name": "Arcane Mage",
-    "recruiting": false,
-    "itemLevel": 235
+    "recruiting": true,
+    "itemLevel": 245
   },
   {
     "name": "Fire Mage",
-    "recruiting": false,
-    "itemLevel": 235
+    "recruiting": true,
+    "itemLevel": 245
   },
   {
     "name": "Frost Mage",
-    "recruiting": false,
-    "itemLevel": 235
+    "recruiting": true,
+    "itemLevel": 245
   },
   {
     "name": "Brewmaster Monk",
@@ -92,7 +92,7 @@
   {
     "name": "Holy Paladin",
     "recruiting": true,
-    "itemLevel": 240
+    "itemLevel": 245
   },
   {
     "name": "Protection Paladin",
@@ -142,7 +142,7 @@
   {
     "name": "Enhancement Shaman",
     "recruiting": true,
-    "itemLevel": 246
+    "itemLevel": 245
   },
   {
     "name": "Restoration Shaman",
