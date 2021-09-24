@@ -6,7 +6,7 @@ const GUILD_NAME = 'stay-mad';
 const RIO_URL = 'https://raider.io/api/v1/characters/profile?region=us';
 const ACCESS_URL = `https://us.battle.net/oauth/token?client_id=${process.env.BNET_CLIENT_ID}&client_secret=${process.env.BNET_CLIENT_SECRET}&grant_type=client_credentials`;
 
-const officers = ["Runeshoes", "Felshoes", "Rollow", "Kepi", "Krazyspriest", "Lojicke"];
+const officers = ["Runeshoes", "Felshoes", "Rollow", "Kepi", "Krazyspriest", "Lojicke", "Lojick"];
 
 async function getBlizzAccessToken() {
     try {
