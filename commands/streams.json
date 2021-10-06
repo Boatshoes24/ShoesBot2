@@ -53,5 +53,13 @@
     "twitchLink": "[Stream Link](https://twitch.tv/patches_tv)",
     "role": "Dps",
     "inline": true
+  },
+
+    {
+    "twitchName": "thalliumz",
+    "displayName": "Redstars",
+    "twitchLink": "[Stream Link](https://twitch.tv/thalliumz)",
+    "role": "Dps",
+    "inline": true
   }
 ]
