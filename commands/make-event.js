@@ -6,6 +6,7 @@ const ROLE_MAD = '<@&450216070003949568>';
 const ROLE_HEALTH_JUICER = '<@&566805261663207450>';
 const ROLE_TRIAL = '<@&569186360267767848>';
 const ROLE_HANGRY = '<@&744052129014218752>';
+const ROLE_SALES = '<@&898733735476871188>';
 
 const CHANNELS = ['sales-info', 'general'];
 
@@ -14,7 +15,7 @@ module.exports = {
     description: 'Creates an event with a reaction',
     aliases: ['event'],
     args: true,
-    usage: '<Date> <Event Name> <all/raiders>',
+    usage: '<Date> <Event Name> <all/raiders/sale/sales>',
     cooldown: 30,
     execute(msg, args) {
         if (!msg.member.roles.cache.some(role => roles.includes(role.name))) {
@@ -28,12 +29,14 @@ module.exports = {
         // }
 
         try {
-            if (args[args.length - 1] == 'all' || args[args.length - 1].includes('raider')) {
+            if (args[args.length - 1] == 'all' || args[args.length - 1].includes('raider') || args[args.length - 1].includes('sale')) {
                 const sendTo = args.pop();
                 if (sendTo === 'all') {
                     msg.channel.send(`${ROLE_REAL_MAD}${ROLE_MAD}${ROLE_HEALTH_JUICER}${ROLE_TRIAL}${ROLE_HANGRY}`);
                 } else if (sendTo.includes('raider')) {
                     msg.channel.send(`${ROLE_REAL_MAD}${ROLE_MAD}${ROLE_HEALTH_JUICER}${ROLE_TRIAL}`);
+                } else if (sendTo.includes('sale')) {
+                    msg.channel.send(`${ROLE_SALES}`);
                 }
             }
 
