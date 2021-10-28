@@ -63,6 +63,7 @@ module.exports = {
                     await msg.react(l_emoji)
                     await msg.react(m_emoji)
                     await msg.react(p_emoji)
+                    await msg.react('❌');
                 });
         } catch(err) {
             console.error(err);
