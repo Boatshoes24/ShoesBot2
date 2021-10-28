@@ -46,7 +46,7 @@ module.exports = {
             const eventEmbed = new Discord.MessageEmbed()
             .setTitle(`**Event:** ${eventName}`)
             .setColor('GREEN')
-            .setDescription(`Date: ${eventDate}`)
+            .setDescription(`Date: ${eventDate}\n\nIf you can funnel, sign up using 'C', 'L', 'M', or 'P' for your armor proficiency. If you cannot funnel all 10 bosses, use 'X' to sign up.`)
             .setFooter('Please sign up for this event by reacting below.')
             .setTimestamp()
             .setFooter('Powered by ShoesBot', 'https://i.imgur.com/DiHfi2e.png')
@@ -55,6 +55,7 @@ module.exports = {
             const l_emoji = String.fromCodePoint("L".codePointAt(0) - 65 + 0x1f1e6);
             const m_emoji = String.fromCodePoint("M".codePointAt(0) - 65 + 0x1f1e6);
             const p_emoji = String.fromCodePoint("P".codePointAt(0) - 65 + 0x1f1e6);
+            const x_emoji = String.fromCodePoint("X".codePointAt(0) - 65 + 0x1f1e6);
 
              msg.channel.send(eventEmbed)
                 .then(async function(msg) {
