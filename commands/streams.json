@@ -8,17 +8,9 @@
   },
 
   {
-    "twitchName": "shodaiwan",
+    "twitchName": "showduh",
     "displayName": "Showda",
-    "twitchLink": "[Stream Link](https://www.twitch.tv/shodaiwan)",
-    "role": "Dps",
-    "inline": true
-  },
-
-  {
-    "twitchName": "kepi_24",
-    "displayName": "Kepi",
-    "twitchLink": "[Stream Link](https://twitch.tv/kepi_24)",
+    "twitchLink": "[Stream Link](https://www.twitch.tv/showduh)",
     "role": "Dps",
     "inline": true
   },
