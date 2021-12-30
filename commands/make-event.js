@@ -1,5 +1,6 @@
 const Discord = require('discord.js');
 const roles = require('./roles.json');
+const client = require('../index');
 
 const ROLE_REAL_MAD = '<@&450508412527312896>';
 const ROLE_MAD = '<@&450216070003949568>';
@@ -41,12 +42,13 @@ module.exports = {
             }
 
             const eventDate = args.shift();
-            const eventName = args.join(' ');        
+            const eventName = args.join(' '); 
+            const reactionUpdateChannel = client.channels.cache.get('926256864033906729') ;      
 
             const eventEmbed = new Discord.MessageEmbed()
             .setTitle(`**Event:** ${eventName}`)
             .setColor('GREEN')
-            .setDescription(`Date: ${eventDate}\n\nIf you can funnel, sign up using 'C', 'L', 'M', or 'P' for your armor proficiency. If you cannot funnel all 10 bosses, use 'X' to sign up.`)
+            .setDescription(`Date: ${eventDate}\n\nIf you can funnel, sign up using 'C', 'L', 'M', or 'P' for your armor proficiency. If you cannot attend, react with 'X' to let us know you cannot make it this week.`)
             .setFooter('Please sign up for this event by reacting below.')
             .setTimestamp()
             .setFooter('Powered by ShoesBot', 'https://i.imgur.com/DiHfi2e.png')
@@ -64,7 +66,55 @@ module.exports = {
                     await msg.react(m_emoji)
                     await msg.react(p_emoji)
                     await msg.react('❌');
+
+                    const filter = (reaction, user) => {
+                        return ['🇱', '🇲', '🇵', '🇨', '❌'].includes(reaction.emoji.name) && !user.bot;
+                    };
+
+                    const collector = msg.createReactionCollector(filter, {
+                        time: 604800000,
+                        dispose: true,
+                    });
+
+                    collector.on('collect', (reaction, user) => { 
+                        try {
+                        const reactAddEmbed = new Discord.MessageEmbed()                        
+                            .setAuthor(`${user.username}: Reaction Added`, user.displayAvatarURL()) 
+                            .setTitle(`${eventName} (${eventDate})`)
+                            .setDescription(`${user.username} added reaction ${reaction.emoji.name}`)
+                            .setTimestamp()
+                            .setFooter('Powered by ShoesBot', 'https://i.imgur.com/DiHfi2e.png')                          
+                        
+                        reactionUpdateChannel.send(reactAddEmbed)
+                        } catch(err) {
+                            console.error(err);
+                        }                        
+                    });
+
+                    collector.on('remove', (reaction, user) => {
+                       try {
+                        const reactRemoveEmbed = new Discord.MessageEmbed()                        
+                            .setAuthor(`${user.username}: Reaction Removed`, user.displayAvatarURL()) 
+                            .setTitle(`${eventName} (${eventDate})`)
+                            .setDescription(`${user.username} removed reaction ${reaction.emoji.name}`)
+                            .setTimestamp()
+                            .setFooter('Powered by ShoesBot', 'https://i.imgur.com/DiHfi2e.png')                          
+                        
+                        reactionUpdateChannel.send(reactRemoveEmbed)
+                        } catch(err) {
+                            console.error(err);
+                        }
+                    });
+
+                    collector.on('end', () => {
+                        try {                            
+                            reactionUpdateChannel.send(`Reaction updates for ${eventName} (${eventDate}) have ended.`)
+                        } catch(err) {
+                            console.error(err);
+                        }
+                    });
                 });
+
         } catch(err) {
             console.error(err);
             msg.reply('There was an issue creating your event. Please try again or report this issue.');
