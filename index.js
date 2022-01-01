@@ -71,13 +71,16 @@ client.on('messageCreate', (msg) => {
               let destChannel = client.channels.cache.get('841639042588213259');
 
               let destEmbed = new Discord.MessageEmbed()
-              .setAuthor(msg.embeds[0].author.name)
+              .setAuthor({ name: msg.embeds[0].author.name })
               .setColor(msg.embeds[0].color)
               .setTimestamp(msg.embeds[0].timestamp)
               .addFields(msg.embeds[0].fields)
               .setThumbnail(msg.embeds[0].thumbnail.url)
-              .setFooter('Powered by ShoesBot','https://i.imgur.com/DiHfi2e.png')
-              destChannel.send(destEmbed);   
+              .setFooter({
+                text: 'Powered by ShoesBot',
+                iconURL: 'https://i.imgur.com/DiHfi2e.png'
+              })
+              destChannel.send({ embeds: [destEmbed] });   
             }
           }          
         });
@@ -92,13 +95,16 @@ client.on('messageCreate', (msg) => {
           let destChannel = client.channels.cache.get('818895487074828380');
 
           let destEmbed = new Discord.MessageEmbed()
-            .setAuthor(msg.embeds[0].author.name)
+            .setAuthor({ name: msg.embeds[0].author.name })
             .setColor(msg.embeds[0].color)
             .setTimestamp(msg.embeds[0].timestamp)
             .addFields(msg.embeds[0].fields)
             .setThumbnail(msg.embeds[0].thumbnail.url)
-            .setFooter('Powered by ShoesBot','https://i.imgur.com/DiHfi2e.png')
-          destChannel.send(destEmbed);
+            .setFooter({
+              text: 'Powered by ShoesBot',
+              iconURL: 'https://i.imgur.com/DiHfi2e.png'
+            })
+          destChannel.send({ embeds: [destEmbed] });
         } catch (error) {
           console.error(error);
         }
