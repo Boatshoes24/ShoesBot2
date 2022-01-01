@@ -100,9 +100,12 @@ module.exports = {
                 .setImage(naughtyImg)
                 .setThumbnail(thumbnail)
                 .setTimestamp()
-                .setFooter('Powered by ShoesBot', 'https://i.imgur.com/DiHfi2e.png')
+                .setFooter({ 
+                    text:'Powered by ShoesBot', 
+                    iconURL: 'https://i.imgur.com/DiHfi2e.png' 
+                })
 
-                msg.channel.send(keysEmbed);
+                msg.channel.send({ embeds: [keysEmbed] });
 
         } catch(err) {
             console.log(err);

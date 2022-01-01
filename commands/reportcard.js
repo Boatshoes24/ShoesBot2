@@ -6,7 +6,7 @@ const GUILD_NAME = 'stay-mad';
 const RIO_URL = 'https://raider.io/api/v1/characters/profile?region=us';
 const ACCESS_URL = `https://us.battle.net/oauth/token?client_id=${process.env.BNET_CLIENT_ID}&client_secret=${process.env.BNET_CLIENT_SECRET}&grant_type=client_credentials`;
 
-const officers = ["Runeshoes", "Felshoes", "Rollow", "Kepi", "Krazyspriest", "Lojicke", "Lojick"];
+const officers = ["Runeshoes", "Felshoes", "Rollow", "Krazyspriest", "Lojicke", "Lojick"];
 
 async function getBlizzAccessToken() {
     try {
@@ -91,7 +91,7 @@ module.exports = {
 
             let memberList = [];
             for (const member of members) {
-                if(member.rank === 3 || officers.includes(member.character.name)){
+                if(member.rank === 3 || (member.rank < 3 && officers.includes(member.character.name))){
                     let name = member.character.name.toLowerCase();
                     let ilvlJSON = await getMemberItemLevel(blizzAccessToken, name);
                     memberList.push({name: name, curr: 0, prev: 0, ilvl: ilvlJSON.equipped_item_level});
@@ -138,9 +138,12 @@ module.exports = {
                 .setTitle('Stay Mad Report Card')
                 .setDescription(`\`\`\`${description}\`\`\``)
                 .setTimestamp()
-                .setFooter('Powered by ShoesBot', 'https://i.imgur.com/DiHfi2e.png')
+                .setFooter({ 
+                    text:'Powered by ShoesBot', 
+                    iconURL: 'https://i.imgur.com/DiHfi2e.png' 
+                })
 
-                msg.channel.send(reportEmbed);
+                msg.channel.send({ embeds: [reportEmbed] });
         } catch(err) {
             console.log(err);
         }

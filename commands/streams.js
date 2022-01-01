@@ -72,9 +72,12 @@ module.exports = {
                 .addFields(streamers)
                 .setImage('https://i.imgur.com/wSRFkRM.png')
                 .setTimestamp()
-                .setFooter('Powered by ShoesBot', 'https://i.imgur.com/DiHfi2e.png')
+                .setFooter({ 
+                    text:'Powered by ShoesBot', 
+                    iconURL: 'https://i.imgur.com/DiHfi2e.png' 
+                })
 
-            msg.channel.send(streamEmbed);
+            msg.channel.send({ embeds: [streamEmbed] });
         } catch(err) {
             console.error(err);
             msg.reply('There was an issue getting the stream list. Please wait a few moments and try again or report this issue.');

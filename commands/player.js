@@ -161,9 +161,12 @@ module.exports = {
                 .setDescription(description)
                 .setThumbnail(rioData.thumbnail_url)
                 .setTimestamp()
-                .setFooter('Powered by ShoesBot', 'https://i.imgur.com/DiHfi2e.png')
+                .setFooter({ 
+                    text:'Powered by ShoesBot', 
+                    iconURL: 'https://i.imgur.com/DiHfi2e.png' 
+                })
 
-                msg.channel.send(playerEmbed);
+                msg.channel.send({ embeds: [playerEmbed] });
         } catch(err) {
             console.log(err);
             msg.reply('There seems to be an error with your player query. Please check the name and/or server.')

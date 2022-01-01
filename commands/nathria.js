@@ -35,9 +35,12 @@ module.exports = {
         .addFields(guideFields)
         .setColor('RED')
         .setTimestamp()
-        .setFooter('Powered by ShoesBot', 'https://i.imgur.com/DiHfi2e.png')
+        .setFooter({ 
+            text:'Powered by ShoesBot', 
+            iconURL: 'https://i.imgur.com/DiHfi2e.png' 
+        })
 
-        msg.channel.send(nathriaEmbed)
+        msg.channel.send({ embeds: [nathriaEmbed] })
     }
 }
 

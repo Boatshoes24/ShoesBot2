@@ -48,10 +48,12 @@ module.exports = {
             const eventEmbed = new Discord.MessageEmbed()
             .setTitle(`**Event:** ${eventName}`)
             .setColor('GREEN')
-            .setDescription(`Date: ${eventDate}\n\nIf you can funnel, sign up using 'C', 'L', 'M', or 'P' for your armor proficiency. If you cannot attend, react with 'X' to let us know you cannot make it this week.`)
-            .setFooter('Please sign up for this event by reacting below.')
+            .setDescription(`Date: ${eventDate}\n\nIf you can funnel, sign up using 'C', 'L', 'M', or 'P' for your armor proficiency. \n\nIf you cannot attend, react with 'X' to let us know you cannot make it this week.`)
             .setTimestamp()
-            .setFooter('Powered by ShoesBot', 'https://i.imgur.com/DiHfi2e.png')
+            .setFooter({ 
+                text:'Powered by ShoesBot', 
+                iconURL: 'https://i.imgur.com/DiHfi2e.png' 
+            })
 
             const c_emoji = String.fromCodePoint("C".codePointAt(0) - 65 + 0x1f1e6);
             const l_emoji = String.fromCodePoint("L".codePointAt(0) - 65 + 0x1f1e6);
@@ -71,40 +73,53 @@ module.exports = {
                         return ['🇱', '🇲', '🇵', '🇨', '❌'].includes(reaction.emoji.name) && !user.bot;
                     };
 
-                    const collector = msg.createReactionCollector(filter, {
-                        time: 604800000,
+                    const collector = msg.createReactionCollector({
+                        filter,
+                        time: 60000,
                         dispose: true,
-                    });
+                    })
 
                     collector.on('collect', (reaction, user) => { 
                         try {
                         const reactAddEmbed = new Discord.MessageEmbed()                        
-                            .setAuthor(`${user.username}: Reaction Added`, user.displayAvatarURL()) 
+                            .setAuthor({
+                                name: `${user.username}: Reaction Added`,
+                                iconURL: user.displayAvatarURL()
+                            }) 
                             .setTitle(`${eventName} (${eventDate})`)
                             .setDescription(`${user.username} added reaction ${reaction.emoji.name}`)
                             .setTimestamp()
-                            .setFooter('Powered by ShoesBot', 'https://i.imgur.com/DiHfi2e.png')                          
+                            .setFooter({ 
+                                text:'Powered by ShoesBot', 
+                                iconURL: 'https://i.imgur.com/DiHfi2e.png' 
+                            })                          
                         
-                        reactionUpdateChannel.send(reactAddEmbed)
+                        reactionUpdateChannel.send({ embeds: [reactAddEmbed] })
                         } catch(err) {
                             console.error(err);
                         }                        
-                    });
+                    })
 
                     collector.on('remove', (reaction, user) => {
                        try {
                         const reactRemoveEmbed = new Discord.MessageEmbed()                        
-                            .setAuthor(`${user.username}: Reaction Removed`, user.displayAvatarURL()) 
+                            .setAuthor({
+                                name: `${user.username}: Reaction Removed`, 
+                                iconURL: user.displayAvatarURL()
+                            }) 
                             .setTitle(`${eventName} (${eventDate})`)
                             .setDescription(`${user.username} removed reaction ${reaction.emoji.name}`)
                             .setTimestamp()
-                            .setFooter('Powered by ShoesBot', 'https://i.imgur.com/DiHfi2e.png')                          
+                            .setFooter({ 
+                                text:'Powered by ShoesBot', 
+                                iconURL: 'https://i.imgur.com/DiHfi2e.png' 
+                            })                          
                         
-                        reactionUpdateChannel.send(reactRemoveEmbed)
+                        reactionUpdateChannel.send({ embeds: [reactRemoveEmbed] })
                         } catch(err) {
                             console.error(err);
                         }
-                    });
+                    })
 
                     collector.on('end', () => {
                         try {                            
@@ -112,7 +127,7 @@ module.exports = {
                         } catch(err) {
                             console.error(err);
                         }
-                    });
+                    })
                 });
 
         } catch(err) {

@@ -1,11 +1,17 @@
 const fs = require('fs');
 const Discord = require('discord.js');
+const { Intents } = require('discord.js');
 const { prefix } = require('./config.json');
 const classNeeds = require('./commands/classNeeds.json');
 const fetch = require('node-fetch');
 const RIO_URL = 'https://raider.io/api/v1/characters/profile?';
 
-const client = new Discord.Client();
+const client = new Discord.Client({
+  intents: [
+    Intents.FLAGS.GUILDS, 
+    Intents.FLAGS.GUILD_MESSAGES, 
+    Intents.FLAGS.GUILD_MESSAGE_REACTIONS]
+});
 client.commands = new Discord.Collection();
 const commandFiles = fs
   .readdirSync('./commands')
@@ -34,7 +40,7 @@ async function getRIO(name, server, region) {
     }
 }
 
-client.on('message', (msg) => {
+client.on('messageCreate', (msg) => {
 
   if (msg.author.username === 'Jeeves Recruitment') {
     let rName = msg.embeds[0].author.name;

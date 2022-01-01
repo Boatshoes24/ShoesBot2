@@ -13,8 +13,11 @@ module.exports = {
         .setURL("https://www.warcraftlogs.com/guild/calendar/367786/")
         .setColor('RED')
         .setTimestamp()
-        .setFooter('Powered by ShoesBot', 'https://i.imgur.com/DiHfi2e.png')
+        .setFooter({ 
+            text:'Powered by ShoesBot', 
+            iconURL: 'https://i.imgur.com/DiHfi2e.png' 
+        })
 
-        msg.channel.send(logsEmbed);
+        msg.channel.send({ embeds: [logsEmbed] });
     }
 }

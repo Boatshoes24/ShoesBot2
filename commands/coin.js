@@ -18,13 +18,16 @@ module.exports = {
 
             const coinEmbed = new Discord.MessageEmbed()
             .setTitle('Coin Flip')
-            .setColor('PINK')
+            .setColor('RANDOM')
             .setDescription(`You rolled ${coin.value}!`)
             .setImage(coin.img)
             .setTimestamp()
-            .setFooter('Powered by ShoesBot', 'https://i.imgur.com/DiHfi2e.png')
+            .setFooter({ 
+                text:'Powered by ShoesBot', 
+                iconURL: 'https://i.imgur.com/DiHfi2e.png' 
+            })
             
-            msg.channel.send(coinEmbed);
+            msg.channel.send({ embeds: [coinEmbed] });
         } catch(err) {
             console.error(err);
             msg.reply('There was an error with the coin flip. Try again or report this error.');

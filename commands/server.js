@@ -11,8 +11,11 @@ module.exports = {
         .setThumbnail('https://i.imgur.com/DiHfi2e.png')
         .setDescription(`Users: ${msg.guild.memberCount}`)
         .setTimestamp()
-        .setFooter('Powered by ShoesBot', 'https://i.imgur.com/DiHfi2e.png')
+        .setFooter({ 
+            text:'Powered by ShoesBot', 
+            iconURL: 'https://i.imgur.com/DiHfi2e.png' 
+        })
 
-        msg.channel.send(serverEmbed)
+        msg.channel.send({ embeds: [serverEmbed] })
     },
 }

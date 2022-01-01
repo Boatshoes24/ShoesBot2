@@ -27,9 +27,12 @@ module.exports = {
             .setThumbnail('https://cdn.webshopapp.com/shops/38765/files/240458996/geeek-mystic-magic-8-ball-future-prediction-ball.jpg')
             .setColor('BLUE')
             .setTimestamp()
-            .setFooter('Powered by ShoesBot', 'https://i.imgur.com/DiHfi2e.png')
+            .setFooter({
+                text: 'Powered by ShoesBot',
+                iconURL: 'https://i.imgur.com/DiHfi2e.png'
+            })
 
-            msg.channel.send(eightBallEmbed);
+            msg.channel.send({ embeds: [eightBallEmbed] });
         } catch(err) {
             console.error(err);
             msg.reply('There was an error with your 8ball question. Please try again or use !help so I can DM you with the command usage.')

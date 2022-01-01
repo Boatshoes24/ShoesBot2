@@ -9,28 +9,31 @@ module.exports = {
     cooldown: 10,
     args: false,
     async execute(msg, args) {
-       const getData = async url => {
-           try {
-               const response = await fetch(url);
-               const json = await response.json();
-               return json;
-           } catch (error) {
-               console.log(error);
-           }
-       }
-       const data = await getData(url);
-       const rp = data.raid_progression;
-       const apiEmbed = new Discord.MessageEmbed()
-       .setColor('RED')
-       .setTitle(`${data.name} Raid Progress`)
-       .setDescription(`[**Guild RIO Profile**](${data.profile_url})`)
-       .addFields(
-           { name: 'Castle Nathria', value: rp['castle-nathria'].summary, inline: false },
-       )
-       .setThumbnail('https://i.imgur.com/DiHfi2e.png')
-       .setTimestamp()
-       .setFooter('Powered by ShoesBot', 'https://i.imgur.com/DiHfi2e.png')
+        const getData = async url => {
+            try {
+                const response = await fetch(url);
+                const json = await response.json();
+                return json;
+            } catch (error) {
+                console.log(error);
+            }
+        }
+        const data = await getData(url);
+        const rp = data.raid_progression;
+        const apiEmbed = new Discord.MessageEmbed()
+        .setColor('RED')
+        .setTitle(`${data.name} Raid Progress`)
+        .setDescription(`[**Guild RIO Profile**](${data.profile_url})`)
+        .addFields(
+            { name: 'Castle Nathria', value: rp['castle-nathria'].summary, inline: false },
+        )
+        .setThumbnail('https://i.imgur.com/DiHfi2e.png')
+        .setTimestamp()
+        .setFooter({ 
+            text:'Powered by ShoesBot', 
+            iconURL: 'https://i.imgur.com/DiHfi2e.png' 
+        })
 
-       msg.channel.send(apiEmbed);
+       msg.channel.send({ embeds: [apiEmbed] });
     }
 }
