@@ -1,6 +1,7 @@
 const fetch = require('node-fetch');
 const RIO_URL = 'https://raider.io/api/v1/characters/profile?region=us';
 const Discord = require('discord.js');
+const axios = require('axios');
 
 function formatServer(serverName) {
     serverName = serverName.replace(/\s+/g, '-').replace(/'/g, "").toLowerCase();
@@ -27,23 +28,23 @@ function ConvertTime(timeMS) {
     }   
 }
 
-async function getRIO(name, server) {
+function getRIO(name, server) {
     const rioURL = `${RIO_URL}&realm=${server}&name=${name}&fields=mythic_plus_weekly_highest_level_runs`;
     try {
-        const res = await fetch(rioURL)
-            .then(res => res.json()).catch(err => console.error(err));
-        return res;
+        const promise = axios.get(rioURL)
+        const promiseData = promise.then((response) => response.data)
+        return promiseData
     } catch(err) {
         console.error(err);
     }
 }
 
-async function getRIOAffixes() {
+function getRIOAffixes() {
     const rioURL = `https://raider.io/api/v1/mythic-plus/affixes?region=us&locale=en`;
     try {
-        const res = await fetch(rioURL)
-            .then(res => res.json()).catch(err => console.error(err));
-        return res;
+        const promise = axios.get(rioURL)
+        const promiseData = promise.then((response) => response.data)
+        return promiseData
     } catch(err) {
         console.error(err);
     }
