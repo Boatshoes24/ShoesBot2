@@ -1,34 +1,34 @@
 const Discord = require('discord.js');
-const fetch = require('node-fetch');
+const axios = require('axios');
 const streamsJSON = require('./streams.json');
 
-const offline = '<:offline_power:546953080927813646>';
-const online = '<:online_power:546953081125076993>';
+const offlineEmoji = '<:offline_power:546953080927813646>';
+const onlineEmoji = '<:online_power:546953081125076993>';
 
-const access_url = `https://id.twitch.tv/oauth2/token?client_id=${process.env.TWITCH_CLIENT_ID}&client_secret=${process.env.TWITCH_CLIENT_SECRET}&grant_type=client_credentials`;
+const ACCESS_URL = `https://id.twitch.tv/oauth2/token?client_id=${process.env.TWITCH_CLIENT_ID}&client_secret=${process.env.TWITCH_CLIENT_SECRET}&grant_type=client_credentials`;
 
-async function getAccessToken() {
+function getAccessToken() {
     try {
-        const res = await fetch(access_url, {
-            method: 'POST'
-        }).then(res => res.json()).catch(err => console.error(err));
-        return res;
+        const promise = axios.post(ACCESS_URL)
+        const promiseData = promise.then((response) => response.data)
+        return promiseData
     } catch(err) {
         console.error(err);
     }
 }
 
-async function checkStreamerStatus(accessToken, name) {
+function checkStreamerStatus(accessToken, name) {
     try {
+
         const url = `https://api.twitch.tv/helix/streams?user_login=${name}`;
-        const data = await fetch(url, {
-            method: 'GET',
+        const promise = axios.get(url, {
             headers: {
                 'Client-ID': process.env.TWITCH_CLIENT_ID,
-                'Authorization': 'Bearer ' + accessToken
+                Authorization: `Bearer ${accessToken}`
             }
-        }).then(data => data.json()).catch(err => console.error(err));
-        return data;
+        })
+        const promiseData = promise.then((response) => response.data)
+        return promiseData
     } catch(err) {
         console.error(err);
     }
@@ -49,9 +49,9 @@ module.exports = {
                 let person = streamsJSON[i];
                 const status = await checkStreamerStatus(accessToken.access_token, person.twitchName);
                 if (status.data.length === 0)
-                    liveStatus = offline;
+                    liveStatus = offlineEmoji;
                 else
-                    liveStatus = online;
+                    liveStatus = onlineEmoji;
                 streamers.push({ name: `${liveStatus}${person.displayName}: ${person.role}`, value: person.twitchLink, inline: person.inline });
             }
             
