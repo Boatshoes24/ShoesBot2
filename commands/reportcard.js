@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const roles = require('./roles.json');
-const fetch = require('node-fetch');
+const axios = require('axios');
 const SERVER_NAME = 'area-52';
 const GUILD_NAME = 'stay-mad';
 const RIO_URL = 'https://raider.io/api/v1/characters/profile?region=us';
@@ -8,64 +8,53 @@ const ACCESS_URL = `https://us.battle.net/oauth/token?client_id=${process.env.BN
 
 const officers = ["Runeshoes", "Rollow", "Krazyspriest", "Lojick", "Crunkio"];
 
-async function getBlizzAccessToken() {
+function getBlizzAccessToken() {
     try {
-        const res = await fetch(ACCESS_URL, {
-            method: 'POST',
-        }).then(res => res.json()).catch(err => console.error(err));
-        return res;
+        const promise = axios.post(ACCESS_URL)
+        const dataPromise = promise.then((response) => response.data)
+        return dataPromise
+
     } catch(err) {
          console.error(err);
     }
 }
 
-async function getGuildMemberInfo(accessToken, name) {
+function getGuildMemberInfo(accessToken, name) {
     try {
         const guildInfoUrl = `https://us.api.blizzard.com/data/wow/guild/${SERVER_NAME}/${name}/roster?namespace=profile-us`;
-        const res = await fetch(guildInfoUrl, {
-            method: 'GET',
+        const promise = axios.get(guildInfoUrl, {
             headers: {
                 Authorization: `Bearer ${accessToken.access_token}`
             }
-        }).then(res => res.json()).catch(err => console.error(err));
-        return res;
+        })
+        const dataPromise = promise.then((response) => response.data)
+        return dataPromise
     } catch(err) {
         console.log(err);
     }
 }
 
-async function getMemberItemLevel(accessToken, name) {   
+function getMemberItemLevel(accessToken, name) {   
     try {
         const charInfoUrl = `https://us.api.blizzard.com/profile/wow/character/${SERVER_NAME}/${name}?namespace=profile-us`;
-        const res = await fetch(charInfoUrl, {
-            method: 'GET',
+        const promise = axios.get(charInfoUrl, {
             headers: {
                 Authorization: `Bearer ${accessToken.access_token}`
             }
-        }).then(res => res.json()).catch(err => console.error(err));
-        return res;
+        })
+        const dataPromise = promise.then((response) => response.data)
+        return dataPromise
     } catch(err) {
       console.log(err);
     }
   }
 
-async function getRIOCurrent(name) {
-    const rioURL = `${RIO_URL}&realm=${SERVER_NAME}&name=${name}&fields=mythic_plus_weekly_highest_level_runs`;
+function getRIOWeeklyKeysData(name) {
+    const rioURL = `${RIO_URL}&realm=${SERVER_NAME}&name=${name}&fields=mythic_plus_weekly_highest_level_runs%2Cmythic_plus_previous_weekly_highest_level_runs`;
     try {
-        const res = await fetch(rioURL)
-            .then(res => res.json()).catch(err => console.error(err));
-        return res;
-    } catch(err) {
-        console.error(err);
-    }
-}
-
-async function getRIOPrevious(name) {
-    const rioURL = `${RIO_URL}&realm=${SERVER_NAME}&name=${name}&fields=mythic_plus_previous_weekly_highest_level_runs`;
-    try {
-        const res = await fetch(rioURL)
-            .then(res => res.json()).catch(err => console.error(err));
-        return res;
+        const promise = axios.get(rioURL);
+        const dataPromise = promise.then((response) => response.data)
+        return dataPromise
     } catch(err) {
         console.error(err);
     }
@@ -99,11 +88,13 @@ module.exports = {
             }
             
             for (const member of memberList) {
-                console.log(`**********NEW MEMBER********** (${member.name})`)
-                let current = await getRIOCurrent(member.name);                
-                member.curr = current.mythic_plus_weekly_highest_level_runs.length;
-                let previous = await getRIOPrevious(member.name);
-                member.prev = previous.mythic_plus_previous_weekly_highest_level_runs.length;
+                let keyData = await getRIOWeeklyKeysData(member.name); 
+                if (keyData && keyData.mythic_plus_weekly_highest_level_runs) {
+                    member.curr = keyData.mythic_plus_weekly_highest_level_runs.length;
+                }
+                if (keyData && keyData.mythic_plus_previous_weekly_highest_level_runs){
+                    member.prev = keyData.mythic_plus_previous_weekly_highest_level_runs.length;
+                }         
             }
 
             memberList.sort(function(a, b) {
