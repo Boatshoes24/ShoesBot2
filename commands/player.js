@@ -82,9 +82,9 @@ async function getBlizz3v3Info(accessToken, name, server) {
 
 
 module.exports = {
-    name: 'player',
+    name: 'armory',
     description: 'api fetch of raider.io and blizz player stats',
-    aliases: ['raiderio', 'rio'],
+    aliases: ['raiderio', 'rio', 'player', 'info'],
     args: true,
     cooldown: 5,
     usage: '<player name> <server (if not on Area 52)>',
@@ -167,8 +167,8 @@ module.exports = {
 
                 msg.channel.send({ embeds: [playerEmbed] });
         } catch(err) {
-            console.log(err);
-            msg.reply('There seems to be an error with your player query. Please check the name and/or server.')
+            console.error(err);
+            msg.reply('There seems to be an error with your player query. Please check the name and/or server. It\'s also possible this character has not been logged in for too long.')
         }
     }
 }

@@ -30,7 +30,7 @@ function getGuildMemberInfo(accessToken, name) {
         const dataPromise = promise.then((response) => response.data)
         return dataPromise
     } catch(err) {
-        console.log(err);
+        console.error(err);
     }
 }
 
@@ -45,7 +45,7 @@ function getMemberItemLevel(accessToken, name) {
         const dataPromise = promise.then((response) => response.data)
         return dataPromise
     } catch(err) {
-      console.log(err);
+      console.error(err);
     }
   }
 
@@ -137,7 +137,7 @@ module.exports = {
 
                 msg.channel.send({ embeds: [reportEmbed] });
         } catch(err) {
-            console.log(err);
+            console.error(err);
         }
     }
 }
