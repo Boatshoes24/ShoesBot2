@@ -43,7 +43,7 @@ module.exports = {
 
             const eventDate = args.shift();
             const eventName = args.join(' '); 
-            const reactionUpdateChannel = client.channels.cache.get('926256864033906729') ;      
+            const reactionUpdateChannel = client.channels.cache.get('926256864033906729');      
 
             const eventEmbed = new Discord.MessageEmbed()
             .setTitle(`**Event:** ${eventName}`)
@@ -61,7 +61,7 @@ module.exports = {
             const p_emoji = String.fromCodePoint("P".codePointAt(0) - 65 + 0x1f1e6);
             const x_emoji = String.fromCodePoint("X".codePointAt(0) - 65 + 0x1f1e6);
 
-             msg.channel.send(eventEmbed)
+             msg.channel.send({ embeds: [eventEmbed] })
                 .then(async function(msg) {
                     await msg.react(c_emoji)
                     await msg.react(l_emoji)
