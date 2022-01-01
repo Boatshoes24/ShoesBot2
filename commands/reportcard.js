@@ -6,7 +6,7 @@ const GUILD_NAME = 'stay-mad';
 const RIO_URL = 'https://raider.io/api/v1/characters/profile?region=us';
 const ACCESS_URL = `https://us.battle.net/oauth/token?client_id=${process.env.BNET_CLIENT_ID}&client_secret=${process.env.BNET_CLIENT_SECRET}&grant_type=client_credentials`;
 
-const officers = ["Runeshoes", "Felshoes", "Rollow", "Krazyspriest", "Lojicke", "Lojick"];
+const officers = ["Runeshoes", "Rollow", "Krazyspriest", "Lojick", "Crunkio"];
 
 async function getBlizzAccessToken() {
     try {
@@ -100,6 +100,8 @@ module.exports = {
             
             for (const member of memberList) {
                 let current = await getRIOCurrent(member.name);
+                console.log(member)
+                console.log(current)
                 member.curr = current.mythic_plus_weekly_highest_level_runs.length;
                 let previous = await getRIOPrevious(member.name);
                 member.prev = previous.mythic_plus_previous_weekly_highest_level_runs.length;
