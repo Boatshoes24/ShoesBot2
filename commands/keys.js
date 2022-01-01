@@ -1,4 +1,3 @@
-const fetch = require('node-fetch');
 const RIO_URL = 'https://raider.io/api/v1/characters/profile?region=us';
 const Discord = require('discord.js');
 const axios = require('axios');

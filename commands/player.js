@@ -14,7 +14,7 @@ function capitalizeFirstLetter(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
   }
 
-async function getRIO(name, server) {
+function getRIO(name, server) {
     const rioURL = `${RIO_URL}&realm=${server}&name=${name}&fields=mythic_plus_scores_by_season:current`;
     try {
         const promise = axios.get(rioURL)
@@ -25,7 +25,7 @@ async function getRIO(name, server) {
     }
 }
 
-async function getBlizzAccessToken() {
+function getBlizzAccessToken() {
     try {
         const promise = axios.post(ACCESS_URL)
         const promiseData = promise.then((response) => response.data)
@@ -35,7 +35,7 @@ async function getBlizzAccessToken() {
     }
 }
 
-async function getBlizzCharacterInfo(accessToken, name, server) {
+function getBlizzCharacterInfo(accessToken, name, server) {
     try {
         const charInfoURL = `https://us.api.blizzard.com/profile/wow/character/${server}/${name}?namespace=profile-us`;
         const promise = axios.get(charInfoURL, {
@@ -50,7 +50,7 @@ async function getBlizzCharacterInfo(accessToken, name, server) {
     }
 }
 
-async function getBlizz2v2Info(accessToken, name, server) {
+function getBlizz2v2Info(accessToken, name, server) {
     try {
         const pvpInfoURL = `https://us.api.blizzard.com/profile/wow/character/${server}/${name}/pvp-bracket/2v2?namespace=profile-us`;
         const promise = axios.get(pvpInfoURL, {
@@ -65,7 +65,7 @@ async function getBlizz2v2Info(accessToken, name, server) {
     }
 }
 
-async function getBlizz3v3Info(accessToken, name, server) {
+function getBlizz3v3Info(accessToken, name, server) {
     try {
         const pvpInfoURL = `https://us.api.blizzard.com/profile/wow/character/${server}/${name}/pvp-bracket/3v3?namespace=profile-us`;
         const promise = axios.get(pvpInfoURL, {
