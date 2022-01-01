@@ -1,9 +1,9 @@
-const fs = require('fs');
 const Discord = require('discord.js');
 const { Intents } = require('discord.js');
 const { prefix } = require('./config.json');
 const classNeeds = require('./commands/classNeeds.json');
-const fetch = require('node-fetch');
+const axios = require('axios');
+const fs = require('fs');
 const RIO_URL = 'https://raider.io/api/v1/characters/profile?';
 
 const client = new Discord.Client({
@@ -32,9 +32,9 @@ client.on('ready', () => {
 async function getRIO(name, server, region) {
     const rioURL = `${RIO_URL}region=${region}&realm=${server}&name=${name}&fields=guild`;
     try {
-        const res = await fetch(rioURL)
-            .then(res => res.json()).catch(err => console.error(err));
-        return res;
+      const promise = axios.get(rioURL)
+      const promiseData = promise.then((response) => response.data)
+      return promiseData
     } catch(err) {
         console.error(err);
     }
