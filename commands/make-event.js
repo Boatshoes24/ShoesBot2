@@ -75,7 +75,7 @@ module.exports = {
 
                     const collector = msg.createReactionCollector({
                         filter,
-                        time: 60000,
+                        time: 604800000,
                         dispose: true,
                     })
 
