@@ -99,9 +99,8 @@ module.exports = {
             }
             
             for (const member of memberList) {
-                let current = await getRIOCurrent(member.name);
-                console.log(member)
-                console.log(current)
+                console.log(`**********NEW MEMBER********** (${member.name})`)
+                let current = await getRIOCurrent(member.name);                
                 member.curr = current.mythic_plus_weekly_highest_level_runs.length;
                 let previous = await getRIOPrevious(member.name);
                 member.prev = previous.mythic_plus_previous_weekly_highest_level_runs.length;
