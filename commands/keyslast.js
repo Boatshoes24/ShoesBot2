@@ -93,19 +93,19 @@ module.exports = {
                     }
             }
 
-                const keysEmbed = new Discord.MessageEmbed()
-                .setColor('RED')
-                .setTitle(title)
-                .setDescription(description)
-                .setImage(naughtyImg)
-                .setThumbnail(thumbnail)
-                .setTimestamp()
-                .setFooter({ 
-                    text:'Powered by ShoesBot', 
-                    iconURL: 'https://i.imgur.com/DiHfi2e.png' 
-                })
+            const keysEmbed = new Discord.MessageEmbed()
+            .setColor('RED')
+            .setTitle(title)
+            .setDescription(description)
+            .setImage(naughtyImg)
+            .setThumbnail(thumbnail)
+            .setTimestamp()
+            .setFooter({ 
+                text:'Powered by ShoesBot', 
+                iconURL: 'https://i.imgur.com/DiHfi2e.png' 
+            })
 
-                msg.channel.send({ embeds: [keysEmbed] });
+            msg.channel.send({ embeds: [keysEmbed] });
 
         } catch(err) {
             console.log(err);

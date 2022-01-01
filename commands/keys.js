@@ -1,6 +1,6 @@
-const RIO_URL = 'https://raider.io/api/v1/characters/profile?region=us';
 const Discord = require('discord.js');
 const axios = require('axios');
+const RIO_URL = 'https://raider.io/api/v1/characters/profile?region=us';
 
 function formatServer(serverName) {
     serverName = serverName.replace(/\s+/g, '-').replace(/'/g, "").toLowerCase();
@@ -93,19 +93,19 @@ module.exports = {
                     }
             }
 
-                const keysEmbed = new Discord.MessageEmbed()
-                .setColor('RED')
-                .setTitle(title)
-                .setDescription(description)
-                .setImage(naughtyImg)
-                .setThumbnail(thumbnail)
-                .setTimestamp()
-                .setFooter({ 
-                    text:'Powered by ShoesBot', 
-                    iconURL: 'https://i.imgur.com/DiHfi2e.png' 
-                })
+            const keysEmbed = new Discord.MessageEmbed()
+            .setColor('RED')
+            .setTitle(title)
+            .setDescription(description)
+            .setImage(naughtyImg)
+            .setThumbnail(thumbnail)
+            .setTimestamp()
+            .setFooter({ 
+                text:'Powered by ShoesBot', 
+                iconURL: 'https://i.imgur.com/DiHfi2e.png' 
+            })
 
-                msg.channel.send({ embeds: [keysEmbed] });
+            msg.channel.send({ embeds: [keysEmbed] });
 
         } catch(err) {
             console.log(err);

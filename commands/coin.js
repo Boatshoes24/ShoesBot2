@@ -5,7 +5,6 @@ const coinImgArr = [
     {img: "https://i.imgur.com/zARry5A.png", value: 'Tails'}
 ];
 
-
 module.exports = {
     name: 'coin',
     description: 'flip a coin',
