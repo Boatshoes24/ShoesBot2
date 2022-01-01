@@ -1,6 +1,6 @@
-const fetch = require('node-fetch');
-const RIO_URL = 'https://raider.io/api/v1/characters/profile?region=us';
 const Discord = require('discord.js');
+const axios = require('axios');
+const RIO_URL = 'https://raider.io/api/v1/characters/profile?region=us';
 
 const ACCESS_URL = `https://us.battle.net/oauth/token?client_id=${process.env.BNET_CLIENT_ID}&client_secret=${process.env.BNET_CLIENT_SECRET}&grant_type=client_credentials`;
 
@@ -17,9 +17,9 @@ function capitalizeFirstLetter(string) {
 async function getRIO(name, server) {
     const rioURL = `${RIO_URL}&realm=${server}&name=${name}&fields=mythic_plus_scores_by_season:current`;
     try {
-        const res = await fetch(rioURL)
-            .then(res => res.json()).catch(err => console.error(err));
-        return res;
+        const promise = axios.get(rioURL)
+        const promiseData = promise.then((response) => response.data)
+        return promiseData
     } catch(err) {
         console.error(err);
     }
@@ -27,10 +27,9 @@ async function getRIO(name, server) {
 
 async function getBlizzAccessToken() {
     try {
-        const res = await fetch(ACCESS_URL, {
-            method: 'POST',
-        }).then(res => res.json()).catch(err => console.error(err));
-        return res;
+        const promise = axios.post(ACCESS_URL)
+        const promiseData = promise.then((response) => response.data)
+        return promiseData
     } catch(err) {
          console.error(err);
     }
@@ -39,13 +38,13 @@ async function getBlizzAccessToken() {
 async function getBlizzCharacterInfo(accessToken, name, server) {
     try {
         const charInfoURL = `https://us.api.blizzard.com/profile/wow/character/${server}/${name}?namespace=profile-us`;
-        const data = await fetch(charInfoURL, {
-            method: 'GET',
+        const promise = axios.get(charInfoURL, {
             headers: {
-                'Authorization': `Bearer ${accessToken.access_token}`
+                Authorization: `Bearer ${accessToken.access_token}`
             }
-        }).then(data => data.json()).catch(err => console.error(err));
-        return data;
+        })
+        const promiseData = promise.then((response) => response.data)
+        return promiseData
     } catch(err) {
         console.error(err);
     }
@@ -54,13 +53,13 @@ async function getBlizzCharacterInfo(accessToken, name, server) {
 async function getBlizz2v2Info(accessToken, name, server) {
     try {
         const pvpInfoURL = `https://us.api.blizzard.com/profile/wow/character/${server}/${name}/pvp-bracket/2v2?namespace=profile-us`;
-        const data = await fetch(pvpInfoURL, {
-            method: 'GET',
+        const promise = axios.get(pvpInfoURL, {
             headers: {
-                'Authorization': `Bearer ${accessToken.access_token}`
+                Authorization: `Bearer ${accessToken.access_token}`
             }
-        }).then(data => data.json()).catch(err => console.error(err));
-        return data.rating;
+        })
+        const promiseData = promise.then((response) => response.data)
+        return promiseData
     } catch(err) {
         console.error(err);
     }
@@ -69,13 +68,13 @@ async function getBlizz2v2Info(accessToken, name, server) {
 async function getBlizz3v3Info(accessToken, name, server) {
     try {
         const pvpInfoURL = `https://us.api.blizzard.com/profile/wow/character/${server}/${name}/pvp-bracket/3v3?namespace=profile-us`;
-        const data = await fetch(pvpInfoURL, {
-            method: 'GET',
+        const promise = axios.get(pvpInfoURL, {
             headers: {
-                'Authorization': `Bearer ${accessToken.access_token}`
+                Authorization: `Bearer ${accessToken.access_token}`
             }
-        }).then(data => data.json()).catch(err => console.error(err));
-        return data.rating;
+        })
+        const promiseData = promise.then((response) => response.data)
+        return promiseData
     } catch(err) {
         console.error(err);
     }
