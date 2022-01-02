@@ -5,6 +5,10 @@ const spaceChar = '\u200B'
 
 function formatEmbedArgs(args) {
     let embedFields = [false]
+    let index = 0
+    if (args.length) {
+        index = parseInt(args[0])
+    }
     if (!args.length) {
         embedFields = []
         raidJSON.forEach(item => {
@@ -19,17 +23,39 @@ function formatEmbedArgs(args) {
             }
         }
     }
-    else if (parseInt(args[0]) !== NaN && parseInt(args[0]) > 0 && parseInt(args[0]) <= NUM_BOSSES) {
+    else if (index !== NaN && index === 0) {
         embedFields = []
         raidJSON.forEach(item => {
-            if (item.category === 'auras' && item.boss_num === parseInt(args[0])) {
+            if (item.category === 'auras' && item.boss_num === index) {
+                if (Object.keys(item.value).length === 0) {
+                    embedFields.push({ name: item.name, value: 'No Auras', inline: true })
+                }
+                else {
+                    embedFields.push({ name: item.name, value: spaceChar, inline: false })
+                    for (let aura in item.value) {
+                        embedFields.push({ name: aura, value: `[Link](${item.value[aura]})`, inline: true})
+                    }
+                    if (embedFields.length > 3) {
+                        let emptyFieldNum = 3 - ((embedFields.length - 1) % 3)
+                        for (let i = 0; i < emptyFieldNum; i++) {
+                            embedFields.push({ name: spaceChar, value: spaceChar, inline: true })
+                        }       
+                    }
+                }
+            }            
+        })
+    }
+    else if (index !== NaN && index > 0 && index <= NUM_BOSSES) {
+        embedFields = []
+        raidJSON.forEach(item => {
+            if (item.category === 'auras' && item.boss_num === index) {
                 if (Object.keys(item.value).length === 0) {
                     embedFields.push({ name: item.name, value: 'No Auras', inline: true })
                 }
                 else {
                     embedFields.push({ name: item.name, value: spaceChar, inline: false})
                     for (let aura in item.value) {
-                        embedFields.push({ name: aura, value: `[Wago](${item.value[aura]})`, inline: true })
+                        embedFields.push({ name: aura, value: `[Link](${item.value[aura]})`, inline: true })
                     }
                     if (embedFields.length > 3) {
                         let emptyFieldNum = 3 - ((embedFields.length - 1) % 3)
@@ -74,7 +100,7 @@ module.exports = {
         .setTimestamp()
         .setFooter({ 
             text:'Powered by ShoesBot', 
-            iconURL: 'https://i.imgur.com/DiHfi2e.png' 
+            iconURL: 'https://i.imgur.com/DiHfi2e.png'
         })
 
         let addEmbeds = formatEmbedArgs(args)

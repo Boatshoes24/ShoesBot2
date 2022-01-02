@@ -5,6 +5,11 @@
         "category": "info"
     },
     {
+        "name": "General",
+        "value": "!sod 0",
+        "category": "info"
+    },
+    {
         "name": "Tarragrue",
         "value": "!sod 1",
         "category": "info"
@@ -53,6 +58,19 @@
         "name": "Sylvanas",
         "value": "!sod 10",
         "category": "info"
+    },
+    {
+        "name": "General Auras",
+        "value": {
+            "Causese Pack": "https://wago.io/YW2D3dXNe",
+            "Causese Bars": "https://wago.io/ZLkQwBQd3",
+            "Personal Alerts": "https://wago.io/-it8mA2Y6",
+            "Reloe Pack": "https://wago.io/3YMEHXbAE",
+            "Reloe Bars": "https://wago.io/SanctumIcons",
+            "Echo Auras": "https://echoesports.gg/weakauras"
+        },
+        "boss_num": 0,
+        "category": "auras" 
     },
     {
         "name": "Tarragrue",
