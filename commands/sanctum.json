@@ -1,0 +1,139 @@
+[   
+    {
+        "name": "All Bosses",
+        "value": "!sod all",
+        "category": "info"
+    },
+    {
+        "name": "Tarragrue",
+        "value": "!sod 1",
+        "category": "info"
+    },
+    {
+        "name": "Eye of the Jailer",
+        "value": "!sod 2",
+        "category": "info"
+    },
+    {
+        "name": "The Nine",
+        "value": "!sod 3",
+        "category": "info"
+    },
+    {
+        "name": "Remnant",
+        "value": "!sod 4",
+        "category": "info"
+    },
+    {
+        "name": "Soulrender",
+        "value": "!sod 5",
+        "category": "info"
+    },
+    {
+        "name": "Painsmith",
+        "value": "!sod 6",
+        "category": "info"
+    },
+    {
+        "name": "Guardian",
+        "value": "!sod 7",
+        "category": "info"
+    },
+    {
+        "name": "Fatescribe",
+        "value": "!sod 8",
+        "category": "info"
+    },
+    {
+        "name": "Kel'thuzad",
+        "value": "!sod 9",
+        "category": "info"
+    },
+    {
+        "name": "Sylvanas",
+        "value": "!sod 10",
+        "category": "info"
+    },
+    {
+        "name": "Tarragrue",
+        "value": {},
+        "boss_num": 1,
+        "category": "auras"
+    },
+    {
+        "name": "Eye of the Jailer",
+        "value": {},
+        "boss_num": 2,
+        "category": "auras"
+    },
+    {
+        "name": "The Nine",
+        "value": {},
+        "boss_num": 3,
+        "category": "auras"
+    },
+    {
+        "name": "Remnant",
+        "value": {
+            "Malevolence Helper": "https://wago.io/mZ9WBRLCQ"
+        },
+        "boss_num": 4,
+        "category": "auras"
+    },
+    {
+        "name": "Soulrender",
+        "value": {
+            "Shackles Assign": "https://wago.io/Aua_WXlCE"
+        },
+        "boss_num": 5,
+        "category": "auras"
+    },
+    {
+        "name": "Painsmith",
+        "value": {},
+        "boss_num": 6,
+        "category": "auras"
+    },
+    {
+        "name": "Guardian",
+        "value": {
+            "Bomb Assign": "https://wago.io/CE9poQ1LN"
+        },
+        "boss_num": 7,
+        "category": "auras"
+    },
+    {
+        "name": "Fatescribe",
+        "value": {
+            "Grim Portent": "https://wago.io/Cz6aKNTIo",
+            "Rune Assign": "https://wago.io/2JThfnb9V",
+            "Rune Mark": "https://wago.io/B-O91VtCg"
+        },
+        "boss_num": 8,
+        "category": "auras"
+    },
+    {
+        "name": "Kel'thuzad",
+        "value": {
+            "Interrupts": "https://wago.io/KNBmJfdlL"
+        },
+        "boss_num": 9,
+        "category": "auras"
+    },
+    {
+        "name": "Sylvanas",
+        "value": {
+            "Arrow Assign": "https://wago.io/htSSyHGUn",
+            "Speed Assign(druid/sham)": "https://wago.io/SylvanasRoar",
+            "Arrow Wait": "https://wago.io/SJldE9s58",
+            "Add Fixate": " https://wago.io/UrHVrrUdc",
+            "Arrow Fixate": "https://wago.io/Z2sHvf2WR",
+            "Banshee Shroud": "https://wago.io/GLlHQLFRC",
+            "Bait Reminder": "https://wago.io/mCMN5VmAe",
+            "Terror Orb": "https://wago.io/1_mpsuM3J",
+            "Wailing Arrows": "https://wago.io/DClVtQHYm"
+        },
+        "boss_num": 10,
+        "category": "auras"
+    }
+]
