@@ -1,5 +1,6 @@
 const Discord = require('discord.js')
 const { bosses, num_bosses } = require("./sanctum.json")
+const raidJSON = require('./sanctum.json')
 const spaceChar = '\u200B'
 
 function formatEmbedArgs(args) {
@@ -10,6 +11,16 @@ function formatEmbedArgs(args) {
     }
     if (!args.length) {
         embedFields = []
+        
+        let auraTotalCount = 0
+        for(let bossIdx in bosses) {
+            let boss = bosses[bossIdx]
+            if (Object.keys(boss.value).length > 0) {
+                auraTotalCount += Object.keys(boss.value).length
+            }
+        }
+        embedFields.push({ name: 'All Auras', value: `!sod all\nAuras: ${auraTotalCount}`, inline: false})
+
         let auraCount = 0
         for (let bossIdx in bosses) {
             let boss = bosses[bossIdx]
