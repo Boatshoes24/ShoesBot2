@@ -80,6 +80,21 @@ function getBlizz3v3Info(accessToken, name, server) {
     }
 }
 
+function getBlizzRBGInfo(accessToken, name, server) {
+    try {
+        const pvpInfoURL = `https://us.api.blizzard.com/profile/wow/character/${server}/${name}/pvp-bracket/rbg?namespace=profile-us`;
+        const promise = axios.get(pvpInfoURL, {
+            headers: {
+                Authorization: `Bearer ${accessToken.access_token}`
+            }
+        })
+        const promiseData = promise.then((response) => response.data)
+        return promiseData
+    } catch(err) {
+        console.error(err);
+    }
+}
+
 
 module.exports = {
     name: 'armory',
@@ -134,12 +149,15 @@ module.exports = {
                 // retrieve blizzard api pvp data
                 const blizzRating2v2 = await getBlizz2v2Info(blizzAccessToken, playerName, server);
                 const blizzRating3v3 = await getBlizz3v3Info(blizzAccessToken, playerName, server);
+                const blizzRatingRBG = await getBlizzRBGInfo(blizzAccessToken, playerName, server);
                 let twoRating = blizzRating2v2 || 'N/A';
                 let threeRating = blizzRating3v3 || 'N/A';
+                let rbgRating = blizzRatingRBG || 'N/A';
                 
                 let blizzPvPDescription = '\n**__Arena Info__**\n';
                 blizzPvPDescription += `2v2: ${twoRating}\n`;
                 blizzPvPDescription += `3v3: ${threeRating}\n`;
+                blizzPvPDescription += `RBG: ${rbgRating}\n`;
                 description += blizzPvPDescription;
 
                 // retrieve raider io api data
