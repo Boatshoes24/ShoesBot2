@@ -49,6 +49,20 @@ function getBlizzCharacterInfo(accessToken, name, server) {
     }
 }
 
+function getBlizzCurrentPvPSeason(accessToken) {
+    try {
+        const pvpSeasonURL = `https://us.api.blizzard.com/data/wow/pvp-season/index?namespace=dynamic-us&locale=en_US&access_token=USFODwuuYgJPwouTvdDNwTS52QyV8rVJeN`
+        const promise = axios.get(pvpSeasonURL, {
+            headers: {
+                Authorization: `Bearer ${accessToken.access_token}`
+            }
+        }).then(res => res.data).catch(err => console.error(`Blizz season request error: ${err.message}`))
+        return promise
+    } catch(err) {
+        console.error(err)
+    }
+}
+
 function getBlizz2v2Info(accessToken, name, server) {
     try {
         const pvpInfoURL = `https://us.api.blizzard.com/profile/wow/character/${server}/${name}/pvp-bracket/2v2?namespace=profile-us`;
@@ -143,12 +157,26 @@ module.exports = {
                 description += blizzCharDescription; 
 
                 // retrieve blizzard api pvp data
+                const blizzSeasonID = await getBlizzCurrentPvPSeason(blizzAccessToken);
+                let currentPvPSeason = -1;
+                if (blizzSeasonID) {
+                    currentPvPSeason = blizzSeasonID.current_season.id;
+                }
                 const blizzRating2v2 = await getBlizz2v2Info(blizzAccessToken, playerName, server);
+                let twoRating = 'N/A'
+                if (blizzRating2v2 && blizzRating2v2.season.id === currentPvPSeason) {
+                    twoRating = blizzRating2v2.rating
+                }
                 const blizzRating3v3 = await getBlizz3v3Info(blizzAccessToken, playerName, server);
+                let threeRating = 'N/A'
+                if (blizzRating3v3 && blizzRating3v3.season.id === currentPvPSeason) {
+                    threeRating = blizzRating3v3.rating
+                }
                 const blizzRatingRBG = await getBlizzRBGInfo(blizzAccessToken, playerName, server);
-                let twoRating = !blizzRating2v2 ? 'N/A' : blizzRating2v2;
-                let threeRating = !blizzRating3v3 ? 'N/A' : blizzRating3v3;
-                let rbgRating = !blizzRatingRBG ? 'N/A' : blizzRatingRBG;
+                let rbgRating = 'N/A'
+                if (blizzRatingRBG && blizzRatingRBG.season.id === currentPvPSeason) {
+                    rbgRating = blizzRatingRBG.rating
+                }
                 
                 let blizzPvPDescription = '\n**__Arena Info__**\n';
                 blizzPvPDescription += `2v2: ${twoRating}\n`;
