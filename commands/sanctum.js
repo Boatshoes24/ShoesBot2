@@ -1,6 +1,5 @@
 const Discord = require('discord.js')
 const { bosses, num_bosses } = require("./sanctum.json")
-const raidJSON = require('./sanctum.json')
 const spaceChar = '\u200B'
 
 function formatEmbedArgs(args) {

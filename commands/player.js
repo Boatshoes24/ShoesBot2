@@ -134,8 +134,8 @@ module.exports = {
                 // retrieve blizzard api pvp data
                 const blizzRating2v2 = await getBlizz2v2Info(blizzAccessToken, playerName, server);
                 const blizzRating3v3 = await getBlizz3v3Info(blizzAccessToken, playerName, server);
-                let twoRating = (!blizzRating2v2) ? 'N/A' : blizzRating2v2;
-                let threeRating = (!blizzRating3v3) ? 'N/A' : blizzRating3v3;
+                let twoRating = blizzRating2v2 || 'N/A';
+                let threeRating = blizzRating3v3 || 'N/A';
                 
                 let blizzPvPDescription = '\n**__Arena Info__**\n';
                 blizzPvPDescription += `2v2: ${twoRating}\n`;
