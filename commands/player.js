@@ -70,7 +70,7 @@ function getBlizz2v2Info(accessToken, name, server) {
             headers: {
                 Authorization: `Bearer ${accessToken.access_token}`
             }
-        }).then(res => res.data.rating).catch(err => console.error(`2v2 Request Error: ${err.message}`))
+        }).then(res => res.data).catch(err => console.error(`2v2 Request Error: ${err.message}`))
         return promise
     } catch(err) {
         console.error(err);
@@ -84,7 +84,7 @@ function getBlizz3v3Info(accessToken, name, server) {
             headers: {
                 Authorization: `Bearer ${accessToken.access_token}`
             }
-        }).then(res => res.data.rating).catch(err => console.error(`3v3 Request Error: ${err.message}`))
+        }).then(res => res.data).catch(err => console.error(`3v3 Request Error: ${err.message}`))
         return promise
     } catch(err) {
         console.error(err);
@@ -98,7 +98,7 @@ function getBlizzRBGInfo(accessToken, name, server) {
             headers: {
                 Authorization: `Bearer ${accessToken.access_token}`
             }
-        }).then(res => res.data.rating).catch(err => console.err(`RBG Request Error: ${err.message}`))
+        }).then(res => res.data).catch(err => console.err(`RBG Request Error: ${err.message}`))
         return promise
     } catch(err) {
         console.error(err);
@@ -174,7 +174,7 @@ module.exports = {
                 }
                 const blizzRatingRBG = await getBlizzRBGInfo(blizzAccessToken, playerName, server);
                 let rbgRating = 'N/A'
-                if (blizzRatingRBG && blizzRatingRBG.season && blizzRatingRBG.season.id === currentPvPSeason) {
+                if (blizzRatingRBG && blizzRatingRBG.season.id === currentPvPSeason) {
                     rbgRating = blizzRatingRBG.rating
                 }
                 
