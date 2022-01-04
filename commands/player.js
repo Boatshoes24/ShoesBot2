@@ -59,7 +59,7 @@ function getBlizz2v2Info(accessToken, name, server) {
             }
         })
         const promiseData = promise.then((response) => response.data)
-        return promiseData
+        return promiseData.rating
     } catch(err) {
         console.error(err);
     }
@@ -74,7 +74,7 @@ function getBlizz3v3Info(accessToken, name, server) {
             }
         })
         const promiseData = promise.then((response) => response.data)
-        return promiseData
+        return promiseData.rating
     } catch(err) {
         console.error(err);
     }
@@ -89,7 +89,7 @@ function getBlizzRBGInfo(accessToken, name, server) {
             }
         })
         const promiseData = promise.then((response) => response.data)
-        return promiseData
+        return promiseData.rating
     } catch(err) {
         console.error(err);
     }
