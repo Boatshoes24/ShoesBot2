@@ -51,7 +51,7 @@ function getBlizzCharacterInfo(accessToken, name, server) {
 
 function getBlizzCurrentPvPSeason(accessToken) {
     try {
-        const pvpSeasonURL = `https://us.api.blizzard.com/data/wow/pvp-season/index?namespace=dynamic-us&locale=en_US&access_token=USFODwuuYgJPwouTvdDNwTS52QyV8rVJeN`
+        const pvpSeasonURL = `https://us.api.blizzard.com/data/wow/pvp-season/index?namespace=dynamic-us&locale=en_US`
         const promise = axios.get(pvpSeasonURL, {
             headers: {
                 Authorization: `Bearer ${accessToken.access_token}`
