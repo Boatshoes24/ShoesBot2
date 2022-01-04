@@ -56,10 +56,12 @@ function getBlizz2v2Info(accessToken, name, server) {
         const promise = axios.get(pvpInfoURL, {
             headers: {
                 Authorization: `Bearer ${accessToken.access_token}`
+            },
+            validateStatus: function(status) {
+                return status < 400
             }
-        })
-        const promiseData = promise.then((response) => response.data)
-        return promiseData.rating
+        }).then(res => res.data.rating).catch(err => console.error(err.message))
+        return promise
     } catch(err) {
         console.error(err);
     }
@@ -71,10 +73,12 @@ function getBlizz3v3Info(accessToken, name, server) {
         const promise = axios.get(pvpInfoURL, {
             headers: {
                 Authorization: `Bearer ${accessToken.access_token}`
+            },
+            validateStatus: function(status) {
+                return status < 400
             }
-        })
-        const promiseData = promise.then((response) => response.data)
-        return promiseData.rating
+        }).then(res => res.data.rating).catch(err => console.error(err.message))
+        return promise
     } catch(err) {
         console.error(err);
     }
@@ -86,10 +90,12 @@ function getBlizzRBGInfo(accessToken, name, server) {
         const promise = axios.get(pvpInfoURL, {
             headers: {
                 Authorization: `Bearer ${accessToken.access_token}`
+            },
+            validateStatus: function(status) {
+                return status < 400
             }
-        })
-        const promiseData = promise.then((response) => response.data)
-        return promiseData.rating
+        }).then(res => res.data.rating).catch(err => console.err(err.message))
+        return promise
     } catch(err) {
         console.error(err);
     }
@@ -150,9 +156,9 @@ module.exports = {
                 const blizzRating2v2 = await getBlizz2v2Info(blizzAccessToken, playerName, server);
                 const blizzRating3v3 = await getBlizz3v3Info(blizzAccessToken, playerName, server);
                 const blizzRatingRBG = await getBlizzRBGInfo(blizzAccessToken, playerName, server);
-                let twoRating = blizzRating2v2 || 'N/A';
-                let threeRating = blizzRating3v3 || 'N/A';
-                let rbgRating = blizzRatingRBG || 'N/A';
+                let twoRating = !blizzRating2v2 ? 'N/A' : blizzRating2v2;
+                let threeRating = !blizzRating3v3 ? 'N/A' : blizzRating3v3;
+                let rbgRating = !blizzRatingRBG ? 'N/A' : blizzRatingRBG;
                 
                 let blizzPvPDescription = '\n**__Arena Info__**\n';
                 blizzPvPDescription += `2v2: ${twoRating}\n`;
