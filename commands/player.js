@@ -158,7 +158,7 @@ module.exports = {
 
                 // retrieve blizzard api pvp data
                 const blizzSeasonID = await getBlizzCurrentPvPSeason(blizzAccessToken);
-                let currentPvPSeason = -1;
+                let currentPvPSeason = 0;
                 if (blizzSeasonID) {
                     currentPvPSeason = blizzSeasonID.current_season.id;
                 }
@@ -174,7 +174,7 @@ module.exports = {
                 }
                 const blizzRatingRBG = await getBlizzRBGInfo(blizzAccessToken, playerName, server);
                 let rbgRating = 'N/A'
-                if (blizzRatingRBG && blizzRatingRBG.season.id === currentPvPSeason) {
+                if (blizzRatingRBG && blizzRatingRBG.season && blizzRatingRBG.season.id === currentPvPSeason) {
                     rbgRating = blizzRatingRBG.rating
                 }
                 
