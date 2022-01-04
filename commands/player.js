@@ -18,8 +18,8 @@ function getRIO(name, server) {
     const rioURL = `${RIO_URL}&realm=${server}&name=${name}&fields=mythic_plus_scores_by_season:current`;
     try {
         const promise = axios.get(rioURL)
-        const promiseData = promise.then((response) => response.data)
-        return promiseData
+        .then(res => res.data).catch(err => console.error(`Get RIO data error: ${err.message}`))
+        return promise
     } catch(err) {
         console.error(err);
     }
@@ -28,8 +28,8 @@ function getRIO(name, server) {
 function getBlizzAccessToken() {
     try {
         const promise = axios.post(ACCESS_URL)
-        const promiseData = promise.then((response) => response.data)
-        return promiseData
+        .then(res => res.data).catch(err => console.error(`Blizz access token error: ${err.message}`))
+        return promise
     } catch(err) {
          console.error(err);
     }
@@ -42,9 +42,8 @@ function getBlizzCharacterInfo(accessToken, name, server) {
             headers: {
                 Authorization: `Bearer ${accessToken.access_token}`
             }
-        })
-        const promiseData = promise.then((response) => response.data)
-        return promiseData
+        }).then(res => res.data).catch(err => console.error(`Char Info Request Error: ${err.message}`))
+        return promise
     } catch(err) {
         console.error(err);
     }
@@ -56,11 +55,8 @@ function getBlizz2v2Info(accessToken, name, server) {
         const promise = axios.get(pvpInfoURL, {
             headers: {
                 Authorization: `Bearer ${accessToken.access_token}`
-            },
-            validateStatus: function(status) {
-                return status < 400
             }
-        }).then(res => res.data.rating).catch(err => console.error(err.message))
+        }).then(res => res.data.rating).catch(err => console.error(`2v2 Request Error: ${err.message}`))
         return promise
     } catch(err) {
         console.error(err);
@@ -73,11 +69,8 @@ function getBlizz3v3Info(accessToken, name, server) {
         const promise = axios.get(pvpInfoURL, {
             headers: {
                 Authorization: `Bearer ${accessToken.access_token}`
-            },
-            validateStatus: function(status) {
-                return status < 400
             }
-        }).then(res => res.data.rating).catch(err => console.error(err.message))
+        }).then(res => res.data.rating).catch(err => console.error(`3v3 Request Error: ${err.message}`))
         return promise
     } catch(err) {
         console.error(err);
@@ -90,11 +83,8 @@ function getBlizzRBGInfo(accessToken, name, server) {
         const promise = axios.get(pvpInfoURL, {
             headers: {
                 Authorization: `Bearer ${accessToken.access_token}`
-            },
-            validateStatus: function(status) {
-                return status < 400
             }
-        }).then(res => res.data.rating).catch(err => console.err(err.message))
+        }).then(res => res.data.rating).catch(err => console.err(`RBG Request Error: ${err.message}`))
         return promise
     } catch(err) {
         console.error(err);
