@@ -31,8 +31,8 @@ function getRIO(name, server) {
     const rioURL = `${RIO_URL}&realm=${server}&name=${name}&fields=mythic_plus_weekly_highest_level_runs`;
     try {
         const promise = axios.get(rioURL)
-        const promiseData = promise.then((response) => response.data)
-        return promiseData
+        .then(res => res.data).catch(err => console.error(`Error getting RIO data: ${err.message}`))
+        return promise
     } catch(err) {
         console.error(err);
     }
@@ -42,8 +42,8 @@ function getRIOAffixes() {
     const rioURL = `https://raider.io/api/v1/mythic-plus/affixes?region=us&locale=en`;
     try {
         const promise = axios.get(rioURL)
-        const promiseData = promise.then((response) => response.data)
-        return promiseData
+        .then(res => res.data).catch(err => console.error(`Error getting RIO affixes: ${err.message}`))
+        return promise
     } catch(err) {
         console.error(err);
     }

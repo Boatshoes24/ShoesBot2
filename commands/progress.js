@@ -14,8 +14,8 @@ function styleString(string) {
 function getRIOProgress () {
     try {
         const promise = axios.get(url)
-        const promiseData = promise.then((response) => response.data)
-        return promiseData
+        .then(res => res.data).catch(err => console.error(`Error getting RIO progress: ${err.message}`))
+        return promise
     } catch(err) {
         console.error(err)
     }
