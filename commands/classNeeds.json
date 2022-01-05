@@ -6,18 +6,18 @@
   },
   {
     "name": "Unholy Death Knight",
-    "recruiting": true,
+    "recruiting": false,
     "itemLevel": 247
   },
   {
     "name": "Frost Death Knight",
-    "recruiting": true,
+    "recruiting": false,
     "itemLevel": 247
   },
   {
     "name": "Havoc Demon Hunter",
     "recruiting": true,
-    "itemLevel": 247
+    "itemLevel": 250
   },
   {
     "name": "Vengeance Demon Hunter",
@@ -27,7 +27,7 @@
   {
     "name": "Balance Druid",
     "recruiting": true,
-    "itemLevel": 243
+    "itemLevel": 248
   },
   {
     "name": "Feral Druid",
@@ -47,12 +47,12 @@
   {
     "name": "Beast Mastery Hunter",
     "recruiting": true,
-    "itemLevel": 247
+    "itemLevel": 250
   },
   {
     "name": "Marksmanship Hunter",
     "recruiting": true,
-    "itemLevel": 247
+    "itemLevel": 250
   },
   {
     "name": "Survival Hunter",
@@ -62,17 +62,17 @@
   {
     "name": "Arcane Mage",
     "recruiting": true,
-    "itemLevel": 247
+    "itemLevel": 250
   },
   {
     "name": "Fire Mage",
     "recruiting": true,
-    "itemLevel": 247
+    "itemLevel": 250
   },
   {
     "name": "Frost Mage",
     "recruiting": true,
-    "itemLevel": 247
+    "itemLevel": 250
   },
   {
     "name": "Brewmaster Monk",
@@ -86,12 +86,12 @@
   },
   {
     "name": "Windwalker Monk",
-    "recruiting": false,
-    "itemLevel": 235
+    "recruiting": true,
+    "itemLevel": 250
   },
   {
     "name": "Holy Paladin",
-    "recruiting": true,
+    "recruiting": false,
     "itemLevel": 247
   },
   {
@@ -101,7 +101,7 @@
   },
   {
     "name": "Retribution Paladin",
-    "recruiting": true,
+    "recruiting": false,
     "itemLevel": 240
   },
   {
@@ -117,7 +117,7 @@
   {
     "name": "Shadow Priest",
     "recruiting": true,
-    "itemLevel": 247
+    "itemLevel": 250
   },
   {
     "name": "Assassination Rogue",
@@ -137,11 +137,11 @@
   {
     "name": "Elemental Shaman",
     "recruiting": true,
-    "itemLevel": 247
+    "itemLevel": 250
   },
   {
     "name": "Enhancement Shaman",
-    "recruiting": true,
+    "recruiting": false,
     "itemLevel": 247
   },
   {
@@ -152,26 +152,26 @@
   {
     "name": "Affliction Warlock",
     "recruiting": true,
-    "itemLevel": 247
+    "itemLevel": 250
   },
   {
     "name": "Demonology Warlock",
     "recruiting": true,
-    "itemLevel": 247
+    "itemLevel": 250
   },
   {
     "name": "Destruction Warlock",
     "recruiting": true,
-    "itemLevel": 247
+    "itemLevel": 250
   },
   {
     "name": "Arms Warrior",
-    "recruiting": true,
+    "recruiting": false,
     "itemLevel": 247
   },
   {
     "name": "Fury Warrior",
-    "recruiting": true,
+    "recruiting": false,
     "itemLevel": 247
   },
   {
