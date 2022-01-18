@@ -62,21 +62,23 @@ module.exports = {
             const x_emoji = String.fromCodePoint("X".codePointAt(0) - 65 + 0x1f1e6);
 
              msg.channel.send({ embeds: [eventEmbed] })
-                .then(async function(msg) {
-                    await msg.react(c_emoji)
-                    await msg.react(l_emoji)
-                    await msg.react(m_emoji)
-                    await msg.react(p_emoji)
-                    await msg.react('❌');
+                .then((question) => {
+                    question.react(c_emoji)
+                    question.react(l_emoji)
+                    question.react(m_emoji)
+                    question.react(p_emoji)
+                    question.react('❌');
 
                     const filter = (reaction, user) => {
                         return ['🇱', '🇲', '🇵', '🇨', '❌'].includes(reaction.emoji.name) && !user.bot;
                     };
 
-                    const collector = msg.createReactionCollector({
+                    const collector = question.createReactionCollector({
                         filter,
                         time: 604800000,
+                        max: 1000,
                         dispose: true,
+                        idle: 604800000
                     })
 
                     collector.on('collect', (reaction, user) => { 
