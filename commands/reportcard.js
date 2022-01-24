@@ -90,10 +90,10 @@ module.exports = {
             for (const member of memberList) {
                 let keyData = await getRIOWeeklyKeysData(member.name); 
                 if (keyData && keyData.mythic_plus_weekly_highest_level_runs) {
-                    member.curr = keyData.mythic_plus_weekly_highest_level_runs.length;
+                    member.curr = keyData.mythic_plus_weekly_highest_level_runs.length || 0;
                 }
                 if (keyData && keyData.mythic_plus_previous_weekly_highest_level_runs){
-                    member.prev = keyData.mythic_plus_previous_weekly_highest_level_runs.length;
+                    member.prev = keyData.mythic_plus_previous_weekly_highest_level_runs.length || 0;
                 }         
             }
 
