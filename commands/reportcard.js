@@ -118,7 +118,7 @@ module.exports = {
                 else {
                     ilvlSpacing = '  \t';
                 }
-                description += `${member.name[0].toUpperCase() + member.name.slice(1)}:${nameSpacing}${member.curr > 0 ? member.curr : "-"}${numSpacing}${member.prev > 0 ? member.prev : "-"}${ilvlSpacing}${member.ilvl}\n`;
+                description += `${member.name[0].toUpperCase() + member.name.slice(1)} ${nameSpacing}${member.curr > 0 ? member.curr : "-"}${numSpacing}${member.prev > 0 ? member.prev : "-"}${ilvlSpacing}${member.ilvl}\n`;
             }
 
             const reportEmbed = new Discord.MessageEmbed()
