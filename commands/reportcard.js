@@ -24,7 +24,7 @@ function getGuildMemberInfo(accessToken, name) {
             headers: {
                 Authorization: `Bearer ${accessToken.access_token}`
             }
-        }).then((response) => response.data).catch(err => console.error(`Guild Member Info Error: ${err.message}`))
+        }).then((response) => response.data).catch(err => console.error(`Guild Member Info Error(${name}): ${err.message}`))
         return promise
     } catch(err) {
         console.error(err);
@@ -38,7 +38,7 @@ function getMemberItemLevel(accessToken, name) {
             headers: {
                 Authorization: `Bearer ${accessToken.access_token}`
             }
-        }).then((response) => response.data).catch(err => console.error(`Guild Member iLvl Error: ${err.message}`))
+        }).then((response) => response.data).catch(err => console.error(`Guild Member iLvl Error(${name}): ${err.message}`))
         return promise
     } catch(err) {
       console.error(err);
@@ -48,7 +48,7 @@ function getMemberItemLevel(accessToken, name) {
 function getRIOWeeklyKeysData(name) {
     const rioURL = `${RIO_URL}&realm=${SERVER_NAME}&name=${name}&fields=mythic_plus_weekly_highest_level_runs%2Cmythic_plus_previous_weekly_highest_level_runs`;
     try {
-        const promise = axios.get(rioURL).then((response) => response.data).catch(err => console.error(`RIO Data Error: ${err.message}`))
+        const promise = axios.get(rioURL).then((response) => response.data).catch(err => console.error(`RIO Data Error(${name}): ${err.message}`))
         return promise
     } catch(err) {
         console.error(err);
