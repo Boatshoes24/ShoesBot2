@@ -6,14 +6,12 @@ const GUILD_NAME = 'stay-mad';
 const RIO_URL = 'https://raider.io/api/v1/characters/profile?region=us';
 const ACCESS_URL = `https://us.battle.net/oauth/token?client_id=${process.env.BNET_CLIENT_ID}&client_secret=${process.env.BNET_CLIENT_SECRET}&grant_type=client_credentials`;
 
-const officers = ["Runeshoes", "Rollow", "Krazyspriest", "Lojick", "Crunkio"];
+const trackedRanks = [0, 2, 4, 6]
 
 function getBlizzAccessToken() {
     try {
-        const promise = axios.post(ACCESS_URL)
-        const dataPromise = promise.then((response) => response.data)
-        return dataPromise
-
+        const promise = axios.post(ACCESS_URL).then((response) => response.data).catch(err => console.error(`Blizz Access Token Error: ${err.message}`))
+        return promise
     } catch(err) {
          console.error(err);
     }
@@ -26,9 +24,8 @@ function getGuildMemberInfo(accessToken, name) {
             headers: {
                 Authorization: `Bearer ${accessToken.access_token}`
             }
-        })
-        const dataPromise = promise.then((response) => response.data)
-        return dataPromise
+        }).then((response) => response.data).catch(err => console.error(`Guild Member Info Error: ${err.message}`))
+        return promise
     } catch(err) {
         console.error(err);
     }
@@ -41,9 +38,8 @@ function getMemberItemLevel(accessToken, name) {
             headers: {
                 Authorization: `Bearer ${accessToken.access_token}`
             }
-        })
-        const dataPromise = promise.then((response) => response.data)
-        return dataPromise
+        }).then((response) => response.data).catch(err => console.error(`Guild Member iLvl Error: ${err.message}`))
+        return promise
     } catch(err) {
       console.error(err);
     }
@@ -52,9 +48,8 @@ function getMemberItemLevel(accessToken, name) {
 function getRIOWeeklyKeysData(name) {
     const rioURL = `${RIO_URL}&realm=${SERVER_NAME}&name=${name}&fields=mythic_plus_weekly_highest_level_runs%2Cmythic_plus_previous_weekly_highest_level_runs`;
     try {
-        const promise = axios.get(rioURL);
-        const dataPromise = promise.then((response) => response.data)
-        return dataPromise
+        const promise = axios.get(rioURL).then((response) => response.data).catch(err => console.error(`RIO Data Error: ${err.message}`))
+        return promise
     } catch(err) {
         console.error(err);
     }
@@ -80,10 +75,11 @@ module.exports = {
 
             let memberList = [];
             for (const member of members) {
-                if(member.rank === 3 || (member.rank < 3 && officers.includes(member.character.name))){
+                if(trackedRanks.includes(member.rank)){
                     let name = member.character.name.toLowerCase();
                     let ilvlJSON = await getMemberItemLevel(blizzAccessToken, name);
-                    memberList.push({name: name, curr: 0, prev: 0, ilvl: ilvlJSON.equipped_item_level});
+                    if(ilvlJSON)
+                        memberList.push({name: name, curr: 0, prev: 0, ilvl: ilvlJSON.equipped_item_level});
                 }
             }
             
@@ -122,7 +118,7 @@ module.exports = {
                 else {
                     ilvlSpacing = '  \t';
                 }
-                description += `${member.name[0].toUpperCase() + member.name.slice(1)}:${nameSpacing}${member.curr}${numSpacing}${member.prev}${ilvlSpacing}${member.ilvl}\n`;
+                description += `${member.name[0].toUpperCase() + member.name.slice(1)}:${nameSpacing}${member.curr > 0 ? member.curr : "-"}${numSpacing}${member.prev > 0 ? member.prev : "-"}${ilvlSpacing}${member.ilvl}\n`;
             }
 
             const reportEmbed = new Discord.MessageEmbed()
