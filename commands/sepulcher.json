@@ -1,0 +1,83 @@
+{
+    "num_bosses": 11,
+    "bosses": {
+        "general": {
+            "name": "General Auras",
+            "value": {
+                "Causese Pack": "https://wago.io/slraid3"
+            },
+            "boss_num": 0,
+            "command": "!sofo 0" 
+        },
+        "vigilant_guardian": {
+            "name": "Guardian",
+            "value": {},
+            "boss_num": 1,
+            "command":  "!sofo 1"
+        },
+        "skolex": {
+            "name": "Skolex",
+            "value": {},
+            "boss_num": 2,
+            "command": "!sofo 2"
+        },
+        "xymox": {
+            "name": "Xy'mox",
+            "value": {},
+            "boss_num": 3,
+            "command": "!sofo 3"
+        },
+        "halondrus": {
+            "name": "Halondrus",
+            "value": {},
+            "boss_num": 4,
+            "command": "!sofo 4"
+        },
+        "dausegne": {
+            "name": "Dausegne",
+            "value": {},
+            "boss_num": 5,
+            "command": "!sofo 5"
+        },
+        "prototype": {
+            "name": "Prototype",
+            "value": {
+                "Night Hunter Assign": "https://wago.io/IMRdNtnYK"
+            },
+            "boss_num": 6,
+            "command": "!sofo 6"
+        },
+        "lihuvium": {
+            "name": "Lihuvium",
+            "value": {},
+            "boss_num": 7,
+            "command": "!sofo 7"
+        },
+        "anduin": {
+            "name": "Anduin",
+            "value": {
+                "Heal Absorb": "https://wago.io/KwdirK21z"
+            },
+            "boss_num": 8,
+            "command": "!sofo 8"
+        },
+        "lords_of_dread": {
+            "name": "Lords of Dread",
+            "value": {},
+            "boss_num": 9,
+            "command": "!sofo 9"
+        },
+        "rygelon": {
+            "name": "Rygelon",
+            "value": {},
+            "boss_num": 10,
+            "command": "!sofo 10"
+        },
+        "jailer": {
+            "name": "Jailer",
+            "value": {},
+            "boss_num": 11,
+            "command": "!sofo 11"
+        }
+    }
+}
