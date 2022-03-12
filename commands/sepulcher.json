@@ -4,7 +4,8 @@
         "general": {
             "name": "General Auras",
             "value": {
-                "Causese Pack": "https://wago.io/slraid3"
+                "Causese Pack": "https://wago.io/slraid3",
+                "Stay Mad Alerts": "https://wago.io/ymtaBqnck"
             },
             "boss_num": 0,
             "command": "!sofo 0" 
@@ -55,15 +56,15 @@
         },
         "anduin": {
             "name": "Anduin",
-            "value": {
-                "Heal Absorb": "https://wago.io/KwdirK21z"
-            },
+            "value": {},
             "boss_num": 8,
             "command": "!sofo 8"
         },
         "lords_of_dread": {
             "name": "Lords of Dread",
-            "value": {},
+            "value": {
+                "Among Us Help": "https://wago.io/dW5U0N3HP"
+            },
             "boss_num": 9,
             "command": "!sofo 9"
         },
