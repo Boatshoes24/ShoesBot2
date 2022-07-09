@@ -24,14 +24,6 @@
   },
 
   {
-    "twitchName": "krazykraka0",
-    "displayName": "Kwazy",
-    "twitchLink": "[Stream Link](https://twitch.tv/krazykraka0)",
-    "role": "Heals",
-    "inline": true
-  },
-
-  {
     "twitchName": "Illmage_",
     "displayName": "Illmage",
     "twitchLink": "[Stream Link](https://twitch.tv/illmage_)",
@@ -47,19 +39,43 @@
     "inline": true
   },
 
-    {
-    "twitchName": "lojickk",
-    "displayName": "Lojick",
-    "twitchLink": "[Stream Link](https://twitch.tv/lojickk)",
-    "role": "Dps",
-    "inline": true
-  }, 
-
   {
     "twitchName": "zarkion",
     "displayName": "Zark",
     "twitchLink": "[Stream Link](https://twitch.tv/zarkion)",
     "role": "Dps",
     "inline": true
-  }
+  },
+
+  {
+    "twitchName": "sparecash",
+    "displayName": "Musings",
+    "twitchLink": "[Stream Link](https://twitch.tv/sparecash)",
+    "role": "Dps",
+    "inline": true
+  },
+
+   {
+    "twitchName": "magejulook",
+    "displayName": "Crunk",
+    "twitchLink": "[Stream Link](https://twitch.tv/magejulook)",
+    "role": "Dps",
+    "inline": true
+  },
+
+   {
+    "twitchName": "seeniatv",
+    "displayName": "Seenia",
+    "twitchLink": "[Stream Link](https://twitch.tv/seeniatv)",
+    "role": "Dps",
+    "inline": true
+  },
+
+   {
+    "twitchName": "bronzespanks",
+    "displayName": "Bronze",
+    "twitchLink": "[Stream Link](https://twitch.tv/bronzespanks)",
+    "role": "Heals",
+    "inline": true
+  },
 ]

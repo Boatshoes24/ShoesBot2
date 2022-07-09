@@ -5,7 +5,8 @@
             "name": "General Auras",
             "value": {
                 "Causese Pack": "https://wago.io/slraid3",
-                "Stay Mad Alerts": "https://wago.io/ymtaBqnck"
+                "Stay Mad Alerts": "https://wago.io/ymtaBqnck",
+                "Interrupt ERT": "https://wago.io/4xOVTnbVB"
             },
             "boss_num": 0,
             "command": "!sofo 0" 
@@ -18,7 +19,9 @@
         },
         "skolex": {
             "name": "Skolex",
-            "value": {},
+            "value": {
+                "Puddle Move": "https://wago.io/-9o5QXqG2"
+            },
             "boss_num": 2,
             "command": "!sofo 2"
         },
@@ -30,53 +33,72 @@
         },
         "halondrus": {
             "name": "Halondrus",
-            "value": {},
+            "value": {
+                "Bomb Helper": "https://wago.io/q_ebRsPyB"
+            },
             "boss_num": 4,
             "command": "!sofo 4"
         },
         "dausegne": {
             "name": "Dausegne",
-            "value": {},
+            "value": {
+                "Puddle Move": "https://wago.io/SAk_cu8oo"
+            },
             "boss_num": 5,
             "command": "!sofo 5"
         },
         "prototype": {
             "name": "Prototype",
             "value": {
-                "Night Hunter Assign": "https://wago.io/IMRdNtnYK"
+                "Night Hunter Assign": "https://wago.io/3gZEbhtjM"
             },
             "boss_num": 6,
             "command": "!sofo 6"
         },
         "lihuvium": {
             "name": "Lihuvium",
-            "value": {},
+            "value": {
+                "Mote Timer": "https://wago.io/nR9wF-_uZ"
+            },
             "boss_num": 7,
             "command": "!sofo 7"
         },
         "anduin": {
             "name": "Anduin",
-            "value": {},
+            "value": {
+                "CC Manager": "https://wago.io/PGMCmaL5B",
+                "Kingsmourne Enter": "https://wago.io/hccbCFRaz",
+                "Lost Soul HP": "https://wago.io/OjBfZnPQM",
+                "Melee Dodge": "https://wago.io/F1XrJ95BJ"
+            },
             "boss_num": 8,
             "command": "!sofo 8"
         },
         "lords_of_dread": {
             "name": "Lords of Dread",
             "value": {
-                "Among Us Help": "https://wago.io/dW5U0N3HP"
+                "Among Us Help": "https://wago.io/dW5U0N3HP",
+                "Ranged Aim": "https://wago.io/uUXxV_kfp",
+                "Bait Sleep": "https://wago.io/MsiUU7ycB"
             },
             "boss_num": 9,
             "command": "!sofo 9"
         },
         "rygelon": {
             "name": "Rygelon",
-            "value": {},
+            "value": {
+                "Dark Eclipse Assign": "https://wago.io/oS0aOlqrA",
+                "Orb Soaks": "https://wago.io/hhd8i9bAr",
+                
+            },
             "boss_num": 10,
             "command": "!sofo 10"
         },
         "jailer": {
             "name": "Jailer",
-            "value": {},
+            "value": {
+                "Jailer Pack": "https://wago.io/Rzl5TmYnS"
+            },
             "boss_num": 11,
             "command": "!sofo 11"
         }
