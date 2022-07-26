@@ -1,0 +1,105 @@
+{
+    "num_bosses": 10,
+    "bosses": {
+        "general": {
+            "name": "General Auras",
+            "value": {
+                "Causese Pack": "https://wago.io/slraid1",
+                "CN Glows": "https://wago.io/NathriaGlows",
+                "Reloe Pack": "https://wago.io/Nathria"
+            },
+            "boss_num": 0,
+            "command": "!cn 0" 
+        },
+        "shriekwing": {
+            "name": "Shriekwing",
+            "value": {
+                "Sonar Duration": "https://wago.io/WfMoyocV3"
+            },
+            "boss_num": 1,
+            "command":  "!cn 1"
+        },
+        "huntsman_altimor": {
+            "name": "Huntsman",
+            "value": {
+                "Shade Health": "https://wago.io/6WkLT9i1k",
+                "Huntsman Soaks": "https://wago.io/8GdGnsMAf"
+            },
+            "boss_num": 2,
+            "command": "!cn 2"
+        },
+        "hungering_destroyer": {
+            "name": "Hungering Destroyer",
+            "value": {
+                "Miasma Announce": "https://wago.io/PXM28wJfq"
+            },
+            "boss_num": 3,
+            "command": "!cn 3"
+        },
+        "xymox": {
+            "name": "Artificer Xy'mox",
+            "value": {
+                "Seed Explosion": "https://wago.io/L-D_Fkysr"
+            },
+            "boss_num": 4,
+            "command": "!cn 4"
+        },
+        "sun_kings_salvation": {
+            "name": "Sun King",
+            "value": {
+                "Soul Infusion Announce": "https://wago.io/zQvnfqXwf"
+            },
+            "boss_num": 5,
+            "command": "!cn 5"
+        },
+        "lady_inerva_darkvein": {
+            "name": "Inerva",
+            "value": {
+                "Use Immunity": "https://wago.io/aM-Z6c1kx"
+            },
+            "boss_num": 6,
+            "command": "!cn 6"
+        },
+        "the_council_of_blood": {
+            "name": "Council of Blood",
+            "value": {
+                "Dark Recital": "https://wago.io/j7HfZpxN6",
+                "Dancing Fever": "https://wago.io/H4Beysoli"
+            },
+            "boss_num": 7,
+            "command": "!cn 7"
+        },
+        "sludgefist": {
+            "name": "Sludgefist",
+            "value": {
+                "Bait Assign": "https://wago.io/0uGzLBhAt"
+            },
+            "boss_num": 8,
+            "command": "!cn 8"
+        },
+        "stone_legion_generals": {
+            "name": "SLG",
+            "value": {
+                "Soak Main": "https://wago.io/GtuQCwZ2-",
+                "Soak Alert": "https://wago.io/kJFQFy0V8",
+                "Upheaval": "https://wago.io/HcLsyDhV7",
+                "Add Health": "https://wago.io/3QlvireF3",
+                "Orb List": "https://wago.io/cUe1XBhBn"
+            },
+            "boss_num": 9,
+            "command": "!cn 9"
+        },
+        "sire_denathrius": {
+            "name": "Sire Denathrius",
+            "value": {
+                "P3 Teleprompter": "https://wago.io/rZ_HR2CFc",
+                "Adds Health": "https://wago.io/rgh6Rt3nK",
+                "P1 Clears": "https://wago.io/HkFqsFsoc",
+                "Puddles": "https://wago.io/R_Dk-IAgG",
+                "Impale Position": "https://wago.io/du2e7gKVF"
+            },
+            "boss_num": 10,
+            "command": "!cn 10"
+        }
+    }
+}

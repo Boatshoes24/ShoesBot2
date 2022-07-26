@@ -68,8 +68,7 @@
             "value": {
                 "CC Manager": "https://wago.io/PGMCmaL5B",
                 "Kingsmourne Enter": "https://wago.io/hccbCFRaz",
-                "Lost Soul HP": "https://wago.io/OjBfZnPQM",
-                "Melee Dodge": "https://wago.io/F1XrJ95BJ"
+                "Lost Soul HP": "https://wago.io/OjBfZnPQM"
             },
             "boss_num": 8,
             "command": "!sofo 8"
@@ -79,7 +78,8 @@
             "value": {
                 "Among Us Help": "https://wago.io/dW5U0N3HP",
                 "Ranged Aim": "https://wago.io/uUXxV_kfp",
-                "Bait Sleep": "https://wago.io/MsiUU7ycB"
+                "Bait Sleep": "https://wago.io/MsiUU7ycB",
+                "Melee Dodge": "https://wago.io/F1XrJ95BJ"
             },
             "boss_num": 9,
             "command": "!sofo 9"
