@@ -43,6 +43,7 @@ async function getRIO(name, server, region) {
 client.on('messageCreate', (msg) => {
 
   if (msg.author.username === 'Jeeves Recruitment') {
+    console.log(msg);
     let rName = msg.embeds[0].author.name;
     let splitName = rName.split(' | ');
     let ilvl = splitName[splitName.length - 1].match(/\d/g);
@@ -60,7 +61,7 @@ client.on('messageCreate', (msg) => {
       region = spacedName[4].match(/[a-z]/gi).join('').toLowerCase();
     }
 
-    if (region === 'us' && realm === 'area 52') {
+    if (region === 'us' && realm.includes('52')) {
       try {
         getRIO(charName, realm, region)
         .then(function(result) {
