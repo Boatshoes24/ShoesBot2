@@ -5,6 +5,26 @@ const classNeeds = require('./commands/classNeeds.json');
 const axios = require('axios');
 const fs = require('fs');
 const RIO_URL = 'https://raider.io/api/v1/characters/profile?';
+const realmFilter = [
+  'ragnaros', 
+  'frostmourne', 
+  'barthilas', 
+  'nagrand',
+  'khaz\'goroth',
+  'aman\'thul',
+  'caelestrasz',
+  'jubei\'thos',
+  'thaurissan',
+  'dreadmaul',
+  'gundrak',
+  'saurfang',
+  'quel\'thalas',
+  'drakkari',
+  'azralon',
+  'nemesis',
+  'goldrinn',
+  'gallywix'
+];
 
 const client = new Discord.Client({
   intents: [
@@ -91,7 +111,7 @@ client.on('messageCreate', (msg) => {
     }
 
     classNeeds.forEach((item) => {
-      if (rName.includes(item.name) && item.recruiting == true && ilvl >= item.itemLevel) {
+      if (rName.includes(item.name) && item.recruiting == true && ilvl >= item.itemLevel && !realmFilter.includes(realm)) {
         try {
           let destChannel = client.channels.cache.get('818895487074828380');
 
