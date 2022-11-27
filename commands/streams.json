@@ -32,22 +32,6 @@
   },
 
   {
-    "twitchName": "patches_tv",
-    "displayName": "Zethek",
-    "twitchLink": "[Stream Link](https://twitch.tv/patches_tv)",
-    "role": "Dps",
-    "inline": true
-  },
-
-  {
-    "twitchName": "zarkion",
-    "displayName": "Zark",
-    "twitchLink": "[Stream Link](https://twitch.tv/zarkion)",
-    "role": "Dps",
-    "inline": true
-  },
-
-  {
     "twitchName": "sparecash",
     "displayName": "Musings",
     "twitchLink": "[Stream Link](https://twitch.tv/sparecash)",
@@ -59,14 +43,6 @@
     "twitchName": "magejulook",
     "displayName": "Crunk",
     "twitchLink": "[Stream Link](https://twitch.tv/magejulook)",
-    "role": "Dps",
-    "inline": true
-  },
-
-   {
-    "twitchName": "seeniatv",
-    "displayName": "Seenia",
-    "twitchLink": "[Stream Link](https://twitch.tv/seeniatv)",
     "role": "Dps",
     "inline": true
   },
