@@ -2,181 +2,181 @@
   {
     "name": "Blood Death Knight",
     "recruiting": false,
-    "itemLevel": 235
+    "itemLevel": 398
   },
   {
     "name": "Unholy Death Knight",
     "recruiting": false,
-    "itemLevel": 274
+    "itemLevel": 398
   },
   {
     "name": "Frost Death Knight",
     "recruiting": false,
-    "itemLevel": 274
+    "itemLevel": 398
   },
   {
     "name": "Havoc Demon Hunter",
-    "recruiting": false,
-    "itemLevel": 250
+    "recruiting": true,
+    "itemLevel": 398
   },
   {
     "name": "Vengeance Demon Hunter",
     "recruiting": false,
-    "itemLevel": 235
+    "itemLevel": 398
   },
   {
     "name": "Balance Druid",
-    "recruiting": true,
-    "itemLevel": 290
+    "recruiting": false,
+    "itemLevel": 398
   },
   {
     "name": "Feral Druid",
     "recruiting": false,
-    "itemLevel": 235
+    "itemLevel": 398
   },
   {
     "name": "Guardian Druid",
     "recruiting": false,
-    "itemLevel": 235
+    "itemLevel": 398
   },
   {
     "name": "Restoration Druid",
     "recruiting": false,
-    "itemLevel": 235
+    "itemLevel": 398
   },
   {
     "name": "Beast Mastery Hunter",
     "recruiting": true,
-    "itemLevel": 290
+    "itemLevel": 398
   },
   {
     "name": "Marksmanship Hunter",
     "recruiting": true,
-    "itemLevel": 290
+    "itemLevel": 398
   },
   {
     "name": "Survival Hunter",
-    "recruiting": true,
-    "itemLevel": 290
+    "recruiting": false,
+    "itemLevel": 398
   },
   {
     "name": "Arcane Mage",
     "recruiting": true,
-    "itemLevel": 290
+    "itemLevel": 398
   },
   {
     "name": "Fire Mage",
     "recruiting": true,
-    "itemLevel": 290
+    "itemLevel": 398
   },
   {
     "name": "Frost Mage",
     "recruiting": true,
-    "itemLevel": 290
+    "itemLevel": 398
   },
   {
     "name": "Brewmaster Monk",
     "recruiting": false,
-    "itemLevel": 235
+    "itemLevel": 398
   },
   {
     "name": "Mistweaver Monk",
     "recruiting": false,
-    "itemLevel": 235
+    "itemLevel": 398
   },
   {
     "name": "Windwalker Monk",
     "recruiting": false,
-    "itemLevel": 274
+    "itemLevel": 398
   },
   {
     "name": "Holy Paladin",
     "recruiting": false,
-    "itemLevel": 274
+    "itemLevel": 398
   },
   {
     "name": "Protection Paladin",
     "recruiting": false,
-    "itemLevel": 235
+    "itemLevel": 398
   },
   {
     "name": "Retribution Paladin",
     "recruiting": false,
-    "itemLevel": 240
+    "itemLevel": 398
   },
   {
     "name": "Discipline Priest",
     "recruiting": true,
-    "itemLevel": 290
+    "itemLevel": 398
   },
   {
     "name": "Holy Priest",
-    "recruiting": true,
-    "itemLevel": 290
+    "recruiting": false,
+    "itemLevel": 398
   },
   {
     "name": "Shadow Priest",
-    "recruiting": true,
-    "itemLevel": 290
+    "recruiting": false,
+    "itemLevel": 398
   },
   {
     "name": "Assassination Rogue",
-    "recruiting": false,
-    "itemLevel": 265
+    "recruiting": true,
+    "itemLevel": 398
   },
   {
     "name": "Outlaw Rogue",
-    "recruiting": false,
-    "itemLevel": 235
+    "recruiting": true,
+    "itemLevel": 398
   },
   {
     "name": "Subtlety Rogue",
-    "recruiting": false,
-    "itemLevel": 265
+    "recruiting": true,
+    "itemLevel": 398
   },
   {
     "name": "Elemental Shaman",
     "recruiting": false,
-    "itemLevel": 265
+    "itemLevel": 398
   },
   {
     "name": "Enhancement Shaman",
-    "recruiting": false,
-    "itemLevel": 265
+    "recruiting": true,
+    "itemLevel": 398
   },
   {
     "name": "Restoration Shaman",
     "recruiting": false,
-    "itemLevel": 274
+    "itemLevel": 398
   },
   {
     "name": "Affliction Warlock",
-    "recruiting": true,
-    "itemLevel": 290
+    "recruiting": false,
+    "itemLevel": 398
   },
   {
     "name": "Demonology Warlock",
-    "recruiting": true,
-    "itemLevel": 290
+    "recruiting": false,
+    "itemLevel": 398
   },
   {
     "name": "Destruction Warlock",
-    "recruiting": true,
-    "itemLevel": 290
+    "recruiting": false,
+    "itemLevel": 398
   },
   {
     "name": "Arms Warrior",
     "recruiting": true,
-    "itemLevel": 290
+    "itemLevel": 398
   },
   {
     "name": "Fury Warrior",
     "recruiting": true,
-    "itemLevel": 290
+    "itemLevel": 398
   },
   {
     "name": "Protection Warrior",
     "recruiting": false,
-    "itemLevel": 235
+    "itemLevel": 398
   }
 ]
