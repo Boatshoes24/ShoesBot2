@@ -46,12 +46,12 @@
   },
   {
     "name": "Beast Mastery Hunter",
-    "recruiting": true,
+    "recruiting": false,
     "itemLevel": 415
   },
   {
     "name": "Marksmanship Hunter",
-    "recruiting": true,
+    "recruiting": false,
     "itemLevel": 415
   },
   {
@@ -106,7 +106,7 @@
   },
   {
     "name": "Discipline Priest",
-    "recruiting": true,
+    "recruiting": false,
     "itemLevel": 415
   },
   {
@@ -116,22 +116,22 @@
   },
   {
     "name": "Shadow Priest",
-    "recruiting": false,
+    "recruiting": true,
     "itemLevel": 415
   },
   {
     "name": "Assassination Rogue",
-    "recruiting": true,
+    "recruiting": false,
     "itemLevel": 415
   },
   {
     "name": "Outlaw Rogue",
-    "recruiting": true,
+    "recruiting": false,
     "itemLevel": 415
   },
   {
     "name": "Subtlety Rogue",
-    "recruiting": true,
+    "recruiting": false,
     "itemLevel": 415
   },
   {
