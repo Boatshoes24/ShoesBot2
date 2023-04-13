@@ -1,71 +1,72 @@
 {
-    "command_name": "aberrus",
-    "num_bosses": 8,
+    "num_bosses": 9,
     "bosses": {
         "general": {
             "name": "General Auras",
             "value": {
-                "Causese Pack": "https://wago.io/dfraid1",
+                "Causese Pack": "https://wago.io/dfraid2",
+                "Causese Co-Tank": "https://wago.io/dfcotank2",
+                "Reloe Pack": "https://wago.io/Aberrus",
                 "Interrupt ERT": "https://wago.io/InterruptAnchor",
-                "Raid CD Receiver": "https://wago.io/imPxi5p09",
-                "Tank Aura Pack": "https://wago.io/dfcotank1"
+                "ERT CD Timer": "https://wago.io/n7l5uN3YM"
+
             },
             "boss_num": 0,
-            "command": {"$ref": "#/self.command_name"}
+            "command": "!aberrus 1"
         },
         "kazzara": {
             "name": "Kazzara",
             "value": {},
             "boss_num": 1,
-            "command":  "!vault 1"
+            "command":  "!aberrus 1"
         },
-        "terros": {
-            "name": "Terros",
-            "value": {
-                "Awakened Earth Assign": "https://wago.io/OjbtqM82_"
-            },
+        "amalgamation": {
+            "name": "Amalgamation",
+            "value": {},
             "boss_num": 2,
-            "command": "!vault 2"
+            "command": "!aberrus 2"
         },
-        "primal_council": {
-            "name": "Primal Council",
-            "value": {
-                "Primal Blizzard Range": "https://wago.io/DSg1LqJcl"
-            },
+        "forgotten_experiments": {
+            "name": "Forgotten Experiments",
+            "value": {},
             "boss_num": 3,
-            "command": "!vault 3"
+            "command": "!aberrus 3"
         },
-        "sennarth": {
-            "name": "Sennarth",
+        "assault": {
+            "name": "Assault",
             "value": {},
             "boss_num": 4,
-            "command": "!vault 4"
+            "command": "!aberrus 4"
         },
-        "dathea": {
-            "name": "Dathea",
+        "rashok": {
+            "name": "Rashok",
             "value": {},
             "boss_num": 5,
-            "command": "!vault 5"
+            "command": "!aberrus 5"
         },
-        "kurog": {
-            "name": "Kurog Grimtotem",
-            "value": {
-                "Searing Carnage Direction": "https://wago.io/akRIBBg-T"
-            },
+        "zskarn": {
+            "name": "Zskarn",
+            "value": {},
             "boss_num": 6,
-            "command": "!vault 6"
+            "command": "!aberrus 6"
         },
-        "broodkeeper_diurna": {
-            "name": "Broodkeeper Diurna",
+        "magmorax": {
+            "name": "Magmorax",
             "value": {},
             "boss_num": 7,
-            "command": "!vault 7"
+            "command": "!aberrus 7"
         },
-        "raszageth": {
-            "name": "Raszageth",
+        "neltharion": {
+            "name": "Neltharion",
             "value": {},
             "boss_num": 8,
-            "command": "!vault 8"
+            "command": "!aberrus 8"
+        },
+        "sarkareth": {
+            "name": "Sarkareth",
+            "value": {},
+            "boss_num": 9,
+            "command": "!aberrus 9"
         }
     }
 }
