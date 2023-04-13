@@ -1,0 +1,71 @@
+{
+    "command_name": "aberrus",
+    "num_bosses": 8,
+    "bosses": {
+        "general": {
+            "name": "General Auras",
+            "value": {
+                "Causese Pack": "https://wago.io/dfraid1",
+                "Interrupt ERT": "https://wago.io/InterruptAnchor",
+                "Raid CD Receiver": "https://wago.io/imPxi5p09",
+                "Tank Aura Pack": "https://wago.io/dfcotank1"
+            },
+            "boss_num": 0,
+            "command": {"$ref": "#/self.command_name"}
+        },
+        "kazzara": {
+            "name": "Kazzara",
+            "value": {},
+            "boss_num": 1,
+            "command":  "!vault 1"
+        },
+        "terros": {
+            "name": "Terros",
+            "value": {
+                "Awakened Earth Assign": "https://wago.io/OjbtqM82_"
+            },
+            "boss_num": 2,
+            "command": "!vault 2"
+        },
+        "primal_council": {
+            "name": "Primal Council",
+            "value": {
+                "Primal Blizzard Range": "https://wago.io/DSg1LqJcl"
+            },
+            "boss_num": 3,
+            "command": "!vault 3"
+        },
+        "sennarth": {
+            "name": "Sennarth",
+            "value": {},
+            "boss_num": 4,
+            "command": "!vault 4"
+        },
+        "dathea": {
+            "name": "Dathea",
+            "value": {},
+            "boss_num": 5,
+            "command": "!vault 5"
+        },
+        "kurog": {
+            "name": "Kurog Grimtotem",
+            "value": {
+                "Searing Carnage Direction": "https://wago.io/akRIBBg-T"
+            },
+            "boss_num": 6,
+            "command": "!vault 6"
+        },
+        "broodkeeper_diurna": {
+            "name": "Broodkeeper Diurna",
+            "value": {},
+            "boss_num": 7,
+            "command": "!vault 7"
+        },
+        "raszageth": {
+            "name": "Raszageth",
+            "value": {},
+            "boss_num": 8,
+            "command": "!vault 8"
+        }
+    }
+}
