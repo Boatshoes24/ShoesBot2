@@ -12,7 +12,7 @@
 
             },
             "boss_num": 0,
-            "command": "!aberrus 1"
+            "command": "!aberrus 0"
         },
         "kazzara": {
             "name": "Kazzara",
@@ -27,7 +27,7 @@
             "command": "!aberrus 2"
         },
         "forgotten_experiments": {
-            "name": "Forgotten Experiments",
+            "name": "Experiments",
             "value": {},
             "boss_num": 3,
             "command": "!aberrus 3"
