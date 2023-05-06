@@ -1,72 +1,72 @@
 {
-    "num_bosses": 9,
-    "bosses": {
-        "general": {
-            "name": "General Auras",
-            "value": {
-                "Causese Pack": "https://wago.io/dfraid2",
-                "Causese Co-Tank": "https://wago.io/dfcotank2",
-                "Reloe Pack": "https://wago.io/Aberrus",
-                "Interrupt ERT": "https://wago.io/InterruptAnchor",
-                "ERT CD Timer": "https://wago.io/n7l5uN3YM"
-
-            },
-            "boss_num": 0,
-            "command": "!aberrus 0"
-        },
-        "kazzara": {
-            "name": "Kazzara",
-            "value": {},
-            "boss_num": 1,
-            "command":  "!aberrus 1"
-        },
-        "amalgamation": {
-            "name": "Amalgamation",
-            "value": {},
-            "boss_num": 2,
-            "command": "!aberrus 2"
-        },
-        "forgotten_experiments": {
-            "name": "Experiments",
-            "value": {},
-            "boss_num": 3,
-            "command": "!aberrus 3"
-        },
-        "assault": {
-            "name": "Assault",
-            "value": {},
-            "boss_num": 4,
-            "command": "!aberrus 4"
-        },
-        "rashok": {
-            "name": "Rashok",
-            "value": {},
-            "boss_num": 5,
-            "command": "!aberrus 5"
-        },
-        "zskarn": {
-            "name": "Zskarn",
-            "value": {},
-            "boss_num": 6,
-            "command": "!aberrus 6"
-        },
-        "magmorax": {
-            "name": "Magmorax",
-            "value": {},
-            "boss_num": 7,
-            "command": "!aberrus 7"
-        },
-        "neltharion": {
-            "name": "Neltharion",
-            "value": {},
-            "boss_num": 8,
-            "command": "!aberrus 8"
-        },
-        "sarkareth": {
-            "name": "Sarkareth",
-            "value": {},
-            "boss_num": 9,
-            "command": "!aberrus 9"
-        }
-    }
+	"num_bosses": 9,
+	"bosses": {
+		"general": {
+			"name": "General Auras",
+			"value": {
+				"Causese Pack": "https://wago.io/dfraid2",
+				"Causese Co-Tank": "https://wago.io/dfcotank2",
+				"Reloe Pack": "https://wago.io/Aberrus",
+				"Interrupt ERT": "https://wago.io/InterruptAnchor",
+				"ERT CD Timer": "https://wago.io/n7l5uN3YM",
+				"Stay Mad Pack": "https://wago.io/NhHc_0Qua"
+			},
+			"boss_num": 0,
+			"command": "!aberrus 0"
+		},
+		"kazzara": {
+			"name": "Kazzara",
+			"value": {},
+			"boss_num": 1,
+			"command": "!aberrus 1"
+		},
+		"amalgamation": {
+			"name": "Amalgamation",
+			"value": {},
+			"boss_num": 2,
+			"command": "!aberrus 2"
+		},
+		"forgotten_experiments": {
+			"name": "Experiments",
+			"value": {},
+			"boss_num": 3,
+			"command": "!aberrus 3"
+		},
+		"assault": {
+			"name": "Assault",
+			"value": {},
+			"boss_num": 4,
+			"command": "!aberrus 4"
+		},
+		"rashok": {
+			"name": "Rashok",
+			"value": {},
+			"boss_num": 5,
+			"command": "!aberrus 5"
+		},
+		"zskarn": {
+			"name": "Zskarn",
+			"value": {},
+			"boss_num": 6,
+			"command": "!aberrus 6"
+		},
+		"magmorax": {
+			"name": "Magmorax",
+			"value": {},
+			"boss_num": 7,
+			"command": "!aberrus 7"
+		},
+		"neltharion": {
+			"name": "Neltharion",
+			"value": {},
+			"boss_num": 8,
+			"command": "!aberrus 8"
+		},
+		"sarkareth": {
+			"name": "Sarkareth",
+			"value": {},
+			"boss_num": 9,
+			"command": "!aberrus 9"
+		}
+	}
 }
