@@ -1,182 +1,192 @@
 [
-  {
-    "name": "Blood Death Knight",
-    "recruiting": false,
-    "itemLevel": 415
-  },
-  {
-    "name": "Unholy Death Knight",
-    "recruiting": false,
-    "itemLevel": 415
-  },
-  {
-    "name": "Frost Death Knight",
-    "recruiting": false,
-    "itemLevel": 415
-  },
-  {
-    "name": "Havoc Demon Hunter",
-    "recruiting": true,
-    "itemLevel": 415
-  },
-  {
-    "name": "Vengeance Demon Hunter",
-    "recruiting": false,
-    "itemLevel": 415
-  },
-  {
-    "name": "Balance Druid",
-    "recruiting": true,
-    "itemLevel": 415
-  },
-  {
-    "name": "Feral Druid",
-    "recruiting": false,
-    "itemLevel": 415
-  },
-  {
-    "name": "Guardian Druid",
-    "recruiting": false,
-    "itemLevel": 415
-  },
-  {
-    "name": "Restoration Druid",
-    "recruiting": false,
-    "itemLevel": 415
-  },
-  {
-    "name": "Beast Mastery Hunter",
-    "recruiting": false,
-    "itemLevel": 415
-  },
-  {
-    "name": "Marksmanship Hunter",
-    "recruiting": false,
-    "itemLevel": 415
-  },
-  {
-    "name": "Survival Hunter",
-    "recruiting": false,
-    "itemLevel": 415
-  },
-  {
-    "name": "Arcane Mage",
-    "recruiting": true,
-    "itemLevel": 415
-  },
-  {
-    "name": "Fire Mage",
-    "recruiting": true,
-    "itemLevel": 415
-  },
-  {
-    "name": "Frost Mage",
-    "recruiting": true,
-    "itemLevel": 415
-  },
-  {
-    "name": "Brewmaster Monk",
-    "recruiting": false,
-    "itemLevel": 415
-  },
-  {
-    "name": "Mistweaver Monk",
-    "recruiting": false,
-    "itemLevel": 415
-  },
-  {
-    "name": "Windwalker Monk",
-    "recruiting": false,
-    "itemLevel": 415
-  },
-  {
-    "name": "Holy Paladin",
-    "recruiting": false,
-    "itemLevel": 415
-  },
-  {
-    "name": "Protection Paladin",
-    "recruiting": false,
-    "itemLevel": 415
-  },
-  {
-    "name": "Retribution Paladin",
-    "recruiting": false,
-    "itemLevel": 415
-  },
-  {
-    "name": "Discipline Priest",
-    "recruiting": false,
-    "itemLevel": 415
-  },
-  {
-    "name": "Holy Priest",
-    "recruiting": false,
-    "itemLevel": 415
-  },
-  {
-    "name": "Shadow Priest",
-    "recruiting": true,
-    "itemLevel": 415
-  },
-  {
-    "name": "Assassination Rogue",
-    "recruiting": false,
-    "itemLevel": 415
-  },
-  {
-    "name": "Outlaw Rogue",
-    "recruiting": false,
-    "itemLevel": 415
-  },
-  {
-    "name": "Subtlety Rogue",
-    "recruiting": false,
-    "itemLevel": 415
-  },
-  {
-    "name": "Elemental Shaman",
-    "recruiting": false,
-    "itemLevel": 415
-  },
-  {
-    "name": "Enhancement Shaman",
-    "recruiting": true,
-    "itemLevel": 415
-  },
-  {
-    "name": "Restoration Shaman",
-    "recruiting": false,
-    "itemLevel": 415
-  },
-  {
-    "name": "Affliction Warlock",
-    "recruiting": false,
-    "itemLevel": 415
-  },
-  {
-    "name": "Demonology Warlock",
-    "recruiting": false,
-    "itemLevel": 415
-  },
-  {
-    "name": "Destruction Warlock",
-    "recruiting": false,
-    "itemLevel": 415
-  },
-  {
-    "name": "Arms Warrior",
-    "recruiting": true,
-    "itemLevel": 415
-  },
-  {
-    "name": "Fury Warrior",
-    "recruiting": true,
-    "itemLevel": 415
-  },
-  {
-    "name": "Protection Warrior",
-    "recruiting": false,
-    "itemLevel": 415
-  }
+	{
+		"name": "Blood Death Knight",
+		"recruiting": false,
+		"itemLevel": 430
+	},
+	{
+		"name": "Unholy Death Knight",
+		"recruiting": false,
+		"itemLevel": 430
+	},
+	{
+		"name": "Frost Death Knight",
+		"recruiting": false,
+		"itemLevel": 430
+	},
+	{
+		"name": "Havoc Demon Hunter",
+		"recruiting": false,
+		"itemLevel": 430
+	},
+	{
+		"name": "Vengeance Demon Hunter",
+		"recruiting": false,
+		"itemLevel": 430
+	},
+	{
+		"name": "Balance Druid",
+		"recruiting": true,
+		"itemLevel": 430
+	},
+	{
+		"name": "Feral Druid",
+		"recruiting": false,
+		"itemLevel": 430
+	},
+	{
+		"name": "Guardian Druid",
+		"recruiting": false,
+		"itemLevel": 430
+	},
+	{
+		"name": "Restoration Druid",
+		"recruiting": false,
+		"itemLevel": 430
+	},
+	{
+		"name": "Beast Mastery Hunter",
+		"recruiting": false,
+		"itemLevel": 430
+	},
+	{
+		"name": "Marksmanship Hunter",
+		"recruiting": false,
+		"itemLevel": 430
+	},
+	{
+		"name": "Survival Hunter",
+		"recruiting": false,
+		"itemLevel": 430
+	},
+	{
+		"name": "Arcane Mage",
+		"recruiting": true,
+		"itemLevel": 430
+	},
+	{
+		"name": "Fire Mage",
+		"recruiting": true,
+		"itemLevel": 430
+	},
+	{
+		"name": "Frost Mage",
+		"recruiting": false,
+		"itemLevel": 430
+	},
+	{
+		"name": "Brewmaster Monk",
+		"recruiting": false,
+		"itemLevel": 430
+	},
+	{
+		"name": "Mistweaver Monk",
+		"recruiting": false,
+		"itemLevel": 430
+	},
+	{
+		"name": "Windwalker Monk",
+		"recruiting": false,
+		"itemLevel": 430
+	},
+	{
+		"name": "Holy Paladin",
+		"recruiting": false,
+		"itemLevel": 430
+	},
+	{
+		"name": "Protection Paladin",
+		"recruiting": false,
+		"itemLevel": 430
+	},
+	{
+		"name": "Retribution Paladin",
+		"recruiting": false,
+		"itemLevel": 430
+	},
+	{
+		"name": "Discipline Priest",
+		"recruiting": false,
+		"itemLevel": 430
+	},
+	{
+		"name": "Holy Priest",
+		"recruiting": false,
+		"itemLevel": 430
+	},
+	{
+		"name": "Shadow Priest",
+		"recruiting": false,
+		"itemLevel": 430
+	},
+	{
+		"name": "Assassination Rogue",
+		"recruiting": false,
+		"itemLevel": 430
+	},
+	{
+		"name": "Outlaw Rogue",
+		"recruiting": false,
+		"itemLevel": 430
+	},
+	{
+		"name": "Subtlety Rogue",
+		"recruiting": false,
+		"itemLevel": 430
+	},
+	{
+		"name": "Elemental Shaman",
+		"recruiting": false,
+		"itemLevel": 430
+	},
+	{
+		"name": "Enhancement Shaman",
+		"recruiting": true,
+		"itemLevel": 430
+	},
+	{
+		"name": "Restoration Shaman",
+		"recruiting": false,
+		"itemLevel": 430
+	},
+	{
+		"name": "Affliction Warlock",
+		"recruiting": true,
+		"itemLevel": 430
+	},
+	{
+		"name": "Demonology Warlock",
+		"recruiting": true,
+		"itemLevel": 430
+	},
+	{
+		"name": "Destruction Warlock",
+		"recruiting": true,
+		"itemLevel": 430
+	},
+	{
+		"name": "Arms Warrior",
+		"recruiting": true,
+		"itemLevel": 430
+	},
+	{
+		"name": "Fury Warrior",
+		"recruiting": true,
+		"itemLevel": 430
+	},
+	{
+		"name": "Protection Warrior",
+		"recruiting": false,
+		"itemLevel": 430
+	},
+	{
+		"name": "Preservation Evoker",
+		"recruiting": false,
+		"itemLevel": 430
+	},
+	{
+		"name": "Devastation Evoker",
+		"recruiting": true,
+		"itemLevel": 430
+	}
 ]
