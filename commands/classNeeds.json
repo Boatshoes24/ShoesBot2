@@ -2,191 +2,191 @@
 	{
 		"name": "Blood Death Knight",
 		"recruiting": false,
-		"itemLevel": 430
+		"itemLevel": 440
 	},
 	{
 		"name": "Unholy Death Knight",
 		"recruiting": false,
-		"itemLevel": 430
+		"itemLevel": 440
 	},
 	{
 		"name": "Frost Death Knight",
 		"recruiting": false,
-		"itemLevel": 430
+		"itemLevel": 440
 	},
 	{
 		"name": "Havoc Demon Hunter",
 		"recruiting": false,
-		"itemLevel": 430
+		"itemLevel": 440
 	},
 	{
 		"name": "Vengeance Demon Hunter",
 		"recruiting": false,
-		"itemLevel": 430
+		"itemLevel": 440
 	},
 	{
 		"name": "Balance Druid",
 		"recruiting": true,
-		"itemLevel": 430
+		"itemLevel": 440
 	},
 	{
 		"name": "Feral Druid",
 		"recruiting": false,
-		"itemLevel": 430
+		"itemLevel": 440
 	},
 	{
 		"name": "Guardian Druid",
 		"recruiting": false,
-		"itemLevel": 430
+		"itemLevel": 440
 	},
 	{
 		"name": "Restoration Druid",
 		"recruiting": false,
-		"itemLevel": 430
+		"itemLevel": 440
 	},
 	{
 		"name": "Beast Mastery Hunter",
 		"recruiting": false,
-		"itemLevel": 430
+		"itemLevel": 440
 	},
 	{
 		"name": "Marksmanship Hunter",
 		"recruiting": false,
-		"itemLevel": 430
+		"itemLevel": 440
 	},
 	{
 		"name": "Survival Hunter",
 		"recruiting": false,
-		"itemLevel": 430
+		"itemLevel": 440
 	},
 	{
 		"name": "Arcane Mage",
 		"recruiting": true,
-		"itemLevel": 430
+		"itemLevel": 440
 	},
 	{
 		"name": "Fire Mage",
 		"recruiting": true,
-		"itemLevel": 430
+		"itemLevel": 440
 	},
 	{
 		"name": "Frost Mage",
 		"recruiting": false,
-		"itemLevel": 430
+		"itemLevel": 440
 	},
 	{
 		"name": "Brewmaster Monk",
 		"recruiting": false,
-		"itemLevel": 430
+		"itemLevel": 440
 	},
 	{
 		"name": "Mistweaver Monk",
 		"recruiting": false,
-		"itemLevel": 430
+		"itemLevel": 440
 	},
 	{
 		"name": "Windwalker Monk",
 		"recruiting": false,
-		"itemLevel": 430
+		"itemLevel": 440
 	},
 	{
 		"name": "Holy Paladin",
 		"recruiting": false,
-		"itemLevel": 430
+		"itemLevel": 440
 	},
 	{
 		"name": "Protection Paladin",
 		"recruiting": false,
-		"itemLevel": 430
+		"itemLevel": 440
 	},
 	{
 		"name": "Retribution Paladin",
 		"recruiting": false,
-		"itemLevel": 430
+		"itemLevel": 440
 	},
 	{
 		"name": "Discipline Priest",
 		"recruiting": false,
-		"itemLevel": 430
+		"itemLevel": 440
 	},
 	{
 		"name": "Holy Priest",
 		"recruiting": false,
-		"itemLevel": 430
+		"itemLevel": 440
 	},
 	{
 		"name": "Shadow Priest",
 		"recruiting": false,
-		"itemLevel": 430
+		"itemLevel": 440
 	},
 	{
 		"name": "Assassination Rogue",
 		"recruiting": false,
-		"itemLevel": 430
+		"itemLevel": 440
 	},
 	{
 		"name": "Outlaw Rogue",
 		"recruiting": false,
-		"itemLevel": 430
+		"itemLevel": 440
 	},
 	{
 		"name": "Subtlety Rogue",
 		"recruiting": false,
-		"itemLevel": 430
+		"itemLevel": 440
 	},
 	{
 		"name": "Elemental Shaman",
 		"recruiting": false,
-		"itemLevel": 430
+		"itemLevel": 440
 	},
 	{
 		"name": "Enhancement Shaman",
 		"recruiting": true,
-		"itemLevel": 430
+		"itemLevel": 440
 	},
 	{
 		"name": "Restoration Shaman",
 		"recruiting": false,
-		"itemLevel": 430
+		"itemLevel": 440
 	},
 	{
 		"name": "Affliction Warlock",
 		"recruiting": true,
-		"itemLevel": 430
+		"itemLevel": 440
 	},
 	{
 		"name": "Demonology Warlock",
 		"recruiting": true,
-		"itemLevel": 430
+		"itemLevel": 440
 	},
 	{
 		"name": "Destruction Warlock",
 		"recruiting": true,
-		"itemLevel": 430
+		"itemLevel": 440
 	},
 	{
 		"name": "Arms Warrior",
 		"recruiting": true,
-		"itemLevel": 430
+		"itemLevel": 440
 	},
 	{
 		"name": "Fury Warrior",
 		"recruiting": true,
-		"itemLevel": 430
+		"itemLevel": 440
 	},
 	{
 		"name": "Protection Warrior",
 		"recruiting": false,
-		"itemLevel": 430
+		"itemLevel": 440
 	},
 	{
 		"name": "Preservation Evoker",
 		"recruiting": false,
-		"itemLevel": 430
+		"itemLevel": 440
 	},
 	{
 		"name": "Devastation Evoker",
 		"recruiting": true,
-		"itemLevel": 430
+		"itemLevel": 440
 	}
 ]
