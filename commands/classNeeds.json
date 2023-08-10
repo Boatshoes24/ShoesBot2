@@ -41,8 +41,8 @@
 	},
 	{
 		"name": "Restoration Druid",
-		"recruiting": false,
-		"itemLevel": 440
+		"recruiting": true,
+		"itemLevel": 443
 	},
 	{
 		"name": "Beast Mastery Hunter",
@@ -81,8 +81,8 @@
 	},
 	{
 		"name": "Mistweaver Monk",
-		"recruiting": false,
-		"itemLevel": 440
+		"recruiting": true,
+		"itemLevel": 443
 	},
 	{
 		"name": "Windwalker Monk",
@@ -91,8 +91,8 @@
 	},
 	{
 		"name": "Holy Paladin",
-		"recruiting": false,
-		"itemLevel": 440
+		"recruiting": true,
+		"itemLevel": 443
 	},
 	{
 		"name": "Protection Paladin",
@@ -106,13 +106,13 @@
 	},
 	{
 		"name": "Discipline Priest",
-		"recruiting": false,
-		"itemLevel": 440
+		"recruiting": true,
+		"itemLevel": 443
 	},
 	{
 		"name": "Holy Priest",
-		"recruiting": false,
-		"itemLevel": 440
+		"recruiting": true,
+		"itemLevel": 443
 	},
 	{
 		"name": "Shadow Priest",
@@ -146,8 +146,8 @@
 	},
 	{
 		"name": "Restoration Shaman",
-		"recruiting": false,
-		"itemLevel": 440
+		"recruiting": true,
+		"itemLevel": 443
 	},
 	{
 		"name": "Affliction Warlock",
@@ -181,8 +181,8 @@
 	},
 	{
 		"name": "Preservation Evoker",
-		"recruiting": false,
-		"itemLevel": 440
+		"recruiting": true,
+		"itemLevel": 443
 	},
 	{
 		"name": "Devastation Evoker",
