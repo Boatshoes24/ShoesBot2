@@ -1,0 +1,72 @@
+{
+	"num_bosses": 9,
+	"bosses": {
+		"general": {
+			"name": "General Auras",
+			"value": {
+				"Causese Pack": "https://wago.io/dfraid3",
+				"Reloe Pack": "https://wago.io/Amirdrassil",
+				"Interrupt ERT": "https://wago.io/InterruptAnchor",
+				"ERT CD Timer": "https://wago.io/n7l5uN3YM"
+			},
+			"boss_num": 0,
+			"command": "!adh 0"
+		},
+		"gnarlroot": {
+			"name": "Gnarlroot",
+			"value": {},
+			"boss_num": 1,
+			"command": "!adh 1"
+		},
+		"igira_the_cruel": {
+			"name": "Igira",
+			"value": {},
+			"boss_num": 2,
+			"command": "!adh 2"
+		},
+		"smolderon": {
+			"name": "Smolderon",
+			"value": {},
+			"boss_num": 3,
+			"command": "!adh 3"
+		},
+		"volocross": {
+			"name": "Volocross",
+			"value": {},
+			"boss_num": 4,
+			"command": "!adh 4"
+		},
+		"larodar_keeper_of_the_flame": {
+			"name": "Larodar",
+			"value": {},
+			"boss_num": 5,
+			"command": "!adh 5"
+		},
+		"council_of_dreams": {
+			"name": "Council of Dreams",
+			"value": {
+				"Duck Vehicle UI": "https://wago.io/G3DgG7LsE"
+			},
+			"boss_num": 6,
+			"command": "!adh 6"
+		},
+		"nymue_weaver_of_the_cycle": {
+			"name": "Nymue",
+			"value": {},
+			"boss_num": 7,
+			"command": "!adh 7"
+		},
+		"tindral_sageswift_seer_of_the_flame": {
+			"name": "Tindral",
+			"value": {},
+			"boss_num": 8,
+			"command": "!adh 8"
+		},
+		"fyrakk_the_blazing": {
+			"name": "Fyrakk",
+			"value": {},
+			"boss_num": 9,
+			"command": "!adh 9"
+		}
+	}
+}
