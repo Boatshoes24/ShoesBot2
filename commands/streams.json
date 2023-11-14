@@ -29,5 +29,13 @@
 		"twitchLink": "[Stream Link](https://twitch.tv/magejulook)",
 		"role": "Dps",
 		"inline": true
+	},
+
+	{
+		"twitchName": "thedadbodgod",
+		"displayName": "Velgandh",
+		"twitchLink": "[Stream Link](https://twitch.tv/thedadbodgod)",
+		"role": "Dps",
+		"inline": true
 	}
 ]
