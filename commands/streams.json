@@ -1,57 +1,33 @@
 [
-  {
-    "twitchName": "getthatgoat",
-    "displayName": "Shoes",
-    "twitchLink": "[Stream Link](https://twitch.tv/getthatgoat)",
-    "role": "Tank",
-    "inline": true
-  },
+	{
+		"twitchName": "getthatgoat",
+		"displayName": "Shoes",
+		"twitchLink": "[Stream Link](https://twitch.tv/getthatgoat)",
+		"role": "Tank",
+		"inline": true
+	},
 
-  {
-    "twitchName": "shodaiwan",
-    "displayName": "Shoda",
-    "twitchLink": "[Stream Link](https://www.twitch.tv/shodaiwan)",
-    "role": "Dps",
-    "inline": true
-  },
+	{
+		"twitchName": "Illmage_",
+		"displayName": "Illmage",
+		"twitchLink": "[Stream Link](https://twitch.tv/illmage_)",
+		"role": "Dps",
+		"inline": true
+	},
 
-  {
-    "twitchName": "deliimeat",
-    "displayName": "Deli",
-    "twitchLink": "[Stream Link](https://twitch.tv/deliimeat)",
-    "role": "Heals",
-    "inline": true
-  },
+	{
+		"twitchName": "Lojickk",
+		"displayName": "Lojick",
+		"twitchLink": "[Stream Link](https://twitch.tv/Lojickk)",
+		"role": "Dps",
+		"inline": true
+	},
 
-  {
-    "twitchName": "Illmage_",
-    "displayName": "Illmage",
-    "twitchLink": "[Stream Link](https://twitch.tv/illmage_)",
-    "role": "Dps",
-    "inline": true
-  },
-
-  {
-    "twitchName": "Lojickk",
-    "displayName": "Lojick",
-    "twitchLink": "[Stream Link](https://twitch.tv/Lojickk)",
-    "role": "Dps",
-    "inline": true
-  },
-
-   {
-    "twitchName": "magejulook",
-    "displayName": "Crunk",
-    "twitchLink": "[Stream Link](https://twitch.tv/magejulook)",
-    "role": "Dps",
-    "inline": true
-  },
-
-   {
-    "twitchName": "bronzespanks",
-    "displayName": "Bronze",
-    "twitchLink": "[Stream Link](https://twitch.tv/bronzespanks)",
-    "role": "Heals",
-    "inline": true
-  }
+	{
+		"twitchName": "magejulook",
+		"displayName": "Crunk",
+		"twitchLink": "[Stream Link](https://twitch.tv/magejulook)",
+		"role": "Dps",
+		"inline": true
+	}
 ]
