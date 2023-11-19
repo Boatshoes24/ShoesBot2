@@ -41,32 +41,32 @@
 	},
 	{
 		"name": "Restoration Druid",
-		"recruiting": true,
+		"recruiting": false,
 		"itemLevel": 443
 	},
 	{
 		"name": "Beast Mastery Hunter",
-		"recruiting": false,
-		"itemLevel": 440
+		"recruiting": true,
+		"itemLevel": 460
 	},
 	{
 		"name": "Marksmanship Hunter",
-		"recruiting": false,
-		"itemLevel": 440
+		"recruiting": true,
+		"itemLevel": 460
 	},
 	{
 		"name": "Survival Hunter",
-		"recruiting": false,
-		"itemLevel": 440
+		"recruiting": true,
+		"itemLevel": 460
 	},
 	{
 		"name": "Arcane Mage",
-		"recruiting": true,
+		"recruiting": false,
 		"itemLevel": 440
 	},
 	{
 		"name": "Fire Mage",
-		"recruiting": true,
+		"recruiting": false,
 		"itemLevel": 440
 	},
 	{
@@ -81,7 +81,7 @@
 	},
 	{
 		"name": "Mistweaver Monk",
-		"recruiting": true,
+		"recruiting": false,
 		"itemLevel": 443
 	},
 	{
@@ -91,7 +91,7 @@
 	},
 	{
 		"name": "Holy Paladin",
-		"recruiting": true,
+		"recruiting": false,
 		"itemLevel": 443
 	},
 	{
@@ -106,33 +106,33 @@
 	},
 	{
 		"name": "Discipline Priest",
-		"recruiting": true,
+		"recruiting": false,
 		"itemLevel": 443
 	},
 	{
 		"name": "Holy Priest",
-		"recruiting": true,
+		"recruiting": false,
 		"itemLevel": 443
 	},
 	{
 		"name": "Shadow Priest",
-		"recruiting": false,
-		"itemLevel": 440
+		"recruiting": true,
+		"itemLevel": 460
 	},
 	{
 		"name": "Assassination Rogue",
-		"recruiting": false,
-		"itemLevel": 440
+		"recruiting": true,
+		"itemLevel": 460
 	},
 	{
 		"name": "Outlaw Rogue",
-		"recruiting": false,
-		"itemLevel": 440
+		"recruiting": true,
+		"itemLevel": 460
 	},
 	{
 		"name": "Subtlety Rogue",
-		"recruiting": false,
-		"itemLevel": 440
+		"recruiting": true,
+		"itemLevel": 460
 	},
 	{
 		"name": "Elemental Shaman",
@@ -142,36 +142,36 @@
 	{
 		"name": "Enhancement Shaman",
 		"recruiting": true,
-		"itemLevel": 440
+		"itemLevel": 460
 	},
 	{
 		"name": "Restoration Shaman",
-		"recruiting": true,
+		"recruiting": false,
 		"itemLevel": 443
 	},
 	{
 		"name": "Affliction Warlock",
-		"recruiting": true,
+		"recruiting": false,
 		"itemLevel": 440
 	},
 	{
 		"name": "Demonology Warlock",
-		"recruiting": true,
+		"recruiting": false,
 		"itemLevel": 440
 	},
 	{
 		"name": "Destruction Warlock",
-		"recruiting": true,
+		"recruiting": false,
 		"itemLevel": 440
 	},
 	{
 		"name": "Arms Warrior",
-		"recruiting": true,
+		"recruiting": false,
 		"itemLevel": 440
 	},
 	{
 		"name": "Fury Warrior",
-		"recruiting": true,
+		"recruiting": false,
 		"itemLevel": 440
 	},
 	{
@@ -181,12 +181,12 @@
 	},
 	{
 		"name": "Preservation Evoker",
-		"recruiting": true,
+		"recruiting": false,
 		"itemLevel": 443
 	},
 	{
 		"name": "Devastation Evoker",
-		"recruiting": true,
+		"recruiting": false,
 		"itemLevel": 440
 	}
 ]
