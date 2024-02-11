@@ -27,12 +27,12 @@
 	{
 		"name": "Balance Druid",
 		"recruiting": true,
-		"itemLevel": 440
+		"itemLevel": 485
 	},
 	{
 		"name": "Feral Druid",
-		"recruiting": false,
-		"itemLevel": 440
+		"recruiting": true,
+		"itemLevel": 485
 	},
 	{
 		"name": "Guardian Druid",
@@ -41,38 +41,38 @@
 	},
 	{
 		"name": "Restoration Druid",
-		"recruiting": false,
-		"itemLevel": 443
+		"recruiting": true,
+		"itemLevel": 485
 	},
 	{
 		"name": "Beast Mastery Hunter",
 		"recruiting": true,
-		"itemLevel": 460
+		"itemLevel": 485
 	},
 	{
 		"name": "Marksmanship Hunter",
 		"recruiting": true,
-		"itemLevel": 460
+		"itemLevel": 485
 	},
 	{
 		"name": "Survival Hunter",
-		"recruiting": true,
+		"recruiting": false,
 		"itemLevel": 460
 	},
 	{
 		"name": "Arcane Mage",
-		"recruiting": false,
-		"itemLevel": 440
+		"recruiting": true,
+		"itemLevel": 485
 	},
 	{
 		"name": "Fire Mage",
-		"recruiting": false,
-		"itemLevel": 440
+		"recruiting": true,
+		"itemLevel": 485
 	},
 	{
 		"name": "Frost Mage",
-		"recruiting": false,
-		"itemLevel": 440
+		"recruiting": true,
+		"itemLevel": 485
 	},
 	{
 		"name": "Brewmaster Monk",
@@ -81,8 +81,8 @@
 	},
 	{
 		"name": "Mistweaver Monk",
-		"recruiting": false,
-		"itemLevel": 443
+		"recruiting": true,
+		"itemLevel": 485
 	},
 	{
 		"name": "Windwalker Monk",
@@ -91,8 +91,8 @@
 	},
 	{
 		"name": "Holy Paladin",
-		"recruiting": false,
-		"itemLevel": 443
+		"recruiting": true,
+		"itemLevel": 485
 	},
 	{
 		"name": "Protection Paladin",
@@ -106,32 +106,32 @@
 	},
 	{
 		"name": "Discipline Priest",
-		"recruiting": false,
-		"itemLevel": 443
+		"recruiting": true,
+		"itemLevel": 485
 	},
 	{
 		"name": "Holy Priest",
-		"recruiting": false,
-		"itemLevel": 443
+		"recruiting": true,
+		"itemLevel": 485
 	},
 	{
 		"name": "Shadow Priest",
-		"recruiting": true,
+		"recruiting": false,
 		"itemLevel": 460
 	},
 	{
 		"name": "Assassination Rogue",
-		"recruiting": true,
+		"recruiting": false,
 		"itemLevel": 460
 	},
 	{
 		"name": "Outlaw Rogue",
-		"recruiting": true,
+		"recruiting": false,
 		"itemLevel": 460
 	},
 	{
 		"name": "Subtlety Rogue",
-		"recruiting": true,
+		"recruiting": false,
 		"itemLevel": 460
 	},
 	{
@@ -142,12 +142,12 @@
 	{
 		"name": "Enhancement Shaman",
 		"recruiting": true,
-		"itemLevel": 460
+		"itemLevel": 485
 	},
 	{
 		"name": "Restoration Shaman",
-		"recruiting": false,
-		"itemLevel": 443
+		"recruiting": true,
+		"itemLevel": 485
 	},
 	{
 		"name": "Affliction Warlock",
@@ -181,12 +181,17 @@
 	},
 	{
 		"name": "Preservation Evoker",
-		"recruiting": false,
-		"itemLevel": 443
+		"recruiting": true,
+		"itemLevel": 485
 	},
 	{
 		"name": "Devastation Evoker",
-		"recruiting": false,
-		"itemLevel": 440
+		"recruiting": true,
+		"itemLevel": 485
+	},
+	{
+		"name": "Augmentation Evoker",
+		"recruiting": true,
+		"itemLevel": 485
 	}
 ]
